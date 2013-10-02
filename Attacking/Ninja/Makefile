@@ -1,0 +1,12 @@
+obj-m += ninja.o
+
+KERNELDIR ?= /media/data/AndroidKernel/goldfish
+
+
+PWD := $(shell pwd)
+
+
+CROSS_COMPILE=/media/data/AndroidFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+
+default:
+	$(MAKE) -C $(KERNELDIR) M=$(PWD) ARCH=arm CROSS_COMPILE=$(CROSS_COMPILE) modules
