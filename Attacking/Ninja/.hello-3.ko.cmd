@@ -1,1 +1,0 @@
-cmd_/media/data/KMod/hello-3.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.8.0-19-generic/scripts/module-common.lds --build-id  -o /media/data/KMod/hello-3.ko /media/data/KMod/hello-3.o /media/data/KMod/hello-3.mod.o
