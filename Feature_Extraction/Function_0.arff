@@ -1,0 +1,67 @@
+@RELATION Function0
+
+@ATTRIBUTE snapshotNumber NUMERIC
+@ATTRIBUTE Value0 NUMERIC
+@ATTRIBUTE Positive1 {0,1}
+@ATTRIBUTE Prime2 {0,1}
+@ATTRIBUTE IntValue3 NUMERIC
+@ATTRIBUTE Odd4 {0,1}
+@ATTRIBUTE Negative5 {0,1}
+@ATTRIBUTE Value6 NUMERIC
+@ATTRIBUTE Positive7 {0,1}
+@ATTRIBUTE Prime8 {0,1}
+@ATTRIBUTE IntValue9 NUMERIC
+@ATTRIBUTE Odd10 {0,1}
+@ATTRIBUTE Negative11 {0,1}
+@ATTRIBUTE Value12 NUMERIC
+@ATTRIBUTE Positive13 {0,1}
+@ATTRIBUTE Prime14 {0,1}
+@ATTRIBUTE IntValue15 NUMERIC
+@ATTRIBUTE Odd16 {0,1}
+@ATTRIBUTE Negative17 {0,1}
+@ATTRIBUTE Value18 NUMERIC
+
+@ATTRIBUTE class {benign, attack}
+@DATA
+
+0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+5, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+6, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+7, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+8, 0, 0, 0, 1, 0, 0, 2147483647, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+9, 0, 0, 0, 1, 0, 0, 2147483647, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+10, 0, 0, 0, 1, 0, 0, 2147483647, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 97, benign
+
+11, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+12, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+13, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+14, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+15, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+16, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+17, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+18, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+19, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
+
+20, 0, 0, 0, 1, 0, 0, -2147483648, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 97, benign
