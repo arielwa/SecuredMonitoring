@@ -1,1 +1,0 @@
-cmd_/media/data/Workspace/Ninja/ninja.ko := /media/data/AndroidFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-ld -EL -r   --build-id -o /media/data/Workspace/Ninja/ninja.ko /media/data/Workspace/Ninja/ninja.o /media/data/Workspace/Ninja/ninja.mod.o
