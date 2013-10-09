@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# Default value for ADB tool path
+OPTION_ADB="./adb"
+
+#Parse command line arguments
+for opt do
+  optarg=`expr "x$opt" : 'x[^=]*=\(.*\)'`
+  case "$opt" in
+  --adb=*) OPTION_ADB="$optarg"
+  ;;
+  *)
+    MODULE_PATH="$opt"
+  esac
+done
+
+# Handle invalid paths
+if [ ! -e "$MODULE_PATH" ];
+then
+   echo "Input file '$MODULE_PATH' not found"
+   exit 1
+fi
+
+if [ ! -e "$OPTION_ADB" ];
+then
+   echo "File '$OPTION_ADB' not found"
+   exit 1
+fi
+
+# Get the file name and module name (which is without the extension) of the given module
+MODULE_FILE=${MODULE_PATH##*/}
+MODULE_NAME=${MODULE_FILE%.*}
+
+echo "Deploying module '$MODULE_NAME' to currently running target..."
+
+# Copy the module to the device
+echo "Copying module..."
+$OPTION_ADB push $MODULE_PATH /data/local/$MODULE_FILE
+
+# Unload the module from memory (in case it or a previous version has been loaded already)
+echo "Unloading previous module version from memory..."
+$OPTION_ADB shell rmmod $MODULE_NAME
+$OPTION_ADB shell rm /dev/$MODULE_NAME
+
+# Load the module to memory
+echo "Loading module to memory..."
+$OPTION_ADB shell insmod /data/local/$MODULE_FILE
+
+# Query the message log of the device to find the Major ID of the module
+echo "Acquiring MajorID of loaded module..."
+MAJOR_ID=`$OPTION_ADB shell dmesg | grep -oh "\[$MODULE_NAME\] MajorID=\([0-9]*\)" | tail -1 | sed "s/\[$MODULE_NAME\] MajorID=\([0-9]*\)/\1/"`
+echo "Major ID = $MAJOR_ID"
+
+# Use BusyBox to create the device for the module
+echo "Starting BusyBox..."
+$OPTION_ADB shell /data/local/busybox mknod /dev/$MODULE_NAME c $MAJOR_ID 0
+
+#All done!
+echo "Module deployed."

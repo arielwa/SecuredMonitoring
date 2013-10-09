@@ -1,0 +1,2 @@
+cd ~/Android/AndroidSDK/sdk/platform-tools
+./adb push ~/Test.txt /sdcard/

@@ -1,0 +1,10 @@
+#!/bin/bash
+cd ~/Android/kernels/goldfishWeka
+export ARCH=arm
+export SUBARCH=arm
+export CROSS_COMPILE=arm-eabi-
+export PATH=~/Android/EmulatorFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin:$PATH
+make goldfish_armv7_bgu_defconfig
+make -j32
+chmod a+x ~/Android/wekaEmulatorScript
+cd ~/Android/AndroidSDK/sdk/tools

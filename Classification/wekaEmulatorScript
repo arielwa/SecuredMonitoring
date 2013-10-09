@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#cd ~/Android/AndroidSDK/sdk/tools
+#./emulator -avd Weka -kernel ~/Android/kernels/goldfishWeka/arch/arm/boot/zImage -verbose -qemu -s -monitor telnet::4444,server &
+
+cd ~/Android/AndroidSDK/sdk/DroidScope
+./emulator -avd Weka -kernel ~/Android/kernels/goldfishWeka/arch/arm/boot/zImage -verbose -qemu -s -monitor stdio
