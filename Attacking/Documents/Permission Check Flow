@@ -1,0 +1,33 @@
+1. App calls alarmManager.setTime()
+
+2. AlarmManagerService.java calls enforceCallingOrSelfPermission with the relevant permission as a string.
+   This is a method of Context implemented in ConetextImpl.java
+
+3. enforceCallingOrSelfPermission calls enforce which just throws a security exception if it recieves false.
+   It recieves the function checkCallingOrSelfPermission which gets the permission as a string.
+
+4. checkCallingOrSelfPermission returns checkPermission(permission, Binder.getCallingPid(),
+   Binder.getCallingUid());
+
+5. checkPermission returns ActivityManagerNative.getDefault().checkPermission(permission, pid, uid);
+   ActivityManagerNative.getDefault() gets the ActivityManager form the ServiceManager and checkPermission is
+   implimented in ActivityManagerService.java
+
+6. checkPermission returns checkComponentPermission(permission, pid, UserHandle.getAppId(uid), -1, true);
+
+7. checkComponentPermission returns PERMISSION_GRANTED if pid is the same as the activityManagers pid, else
+   it returns ActivityManager.checkComponentPermission(permission, uid, owningUid, exported);
+
+8. ActivityManager.checkComponentPermission grants permission if uid is root or system or owner of the thing
+   it is asking for permission on. else it returns 
+   AppGlobals.getPackageManager().checkUidPermission(permission, uid);
+   AppGlobals.getPackageManager() gets PackageManagerService.java from the ServiceManager.
+
+9. 
+
+
+1. replace in the fd table of the activity manager the binder driver with my own copy and change the senders pid.
+2. hook ioctl call, sniff for calls to the activity manager through the binder, or from the activity manager? and change the requesting uid or the answer.
+
+
+**what is happening? it doesn't seem as there is a binder call to the activitymanager. follow the path of root. probably a different path of what you think is happening.

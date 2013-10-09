@@ -1,0 +1,1 @@
+cmd_/media/data/Workspace/Ninja/my_binder.ko := /media/data/AndroidFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-ld -EL -r   --build-id -o /media/data/Workspace/Ninja/my_binder.ko /media/data/Workspace/Ninja/my_binder.o /media/data/Workspace/Ninja/my_binder.mod.o

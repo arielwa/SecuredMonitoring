@@ -1,0 +1,35 @@
+Downloading and compiling kernel for emulator:
+	git clone https://android.googlesource.com/kernel/goldfish.git
+	cd goldfish
+	git checkout origin/goldfish2.somthing
+	export PATH=$/media/data/AndroidFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin:$PATH
+	export ARCH=arm
+	export SUBARCH=arm
+	export CROSS_COMPILE=/media/data/AndroidFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi- //don't really nned this after the first export
+	make goldfish_armv7_defconfig
+	gedit .config
+	uncomment CONFIG_MODULES into CONFIG_MODULES=y
+	make -j32
+
+Start the emulator with the new kernel:
+	/media/data/AndroidADT/sdk/tools/emulator -kernel /media/data/AndroidKernel/goldfish/arch/arm/boot/zImage -avd kmod
+
+Mount the root dir as writable/readable
+	mount -wo remount rootfs /
+	mount -ro remount rootfs /
+
+Install busybox
+	adb push busybox /data/kmod
+	adb shell chmod 755 /data/kmod/busybox
+
+Load the *.ko into the avd using in a new shell:
+	adb push /media/data/KMod/*.ko /data/kmod
+	adb shell
+	cd data/kmod
+	insmod *.ko
+	dmesg to get major
+	./busybox mknod /dev/ninja c major 0
+
+Build android jni project:
+	in <project-path> run sudo <ndk path>/ndk-build
+	run project from eclipse

@@ -1,0 +1,40 @@
+Enable Loadable Kernel Modules in goldfish - from the base kernel directory (This is already done in the buildKernel.sh):
+	make goldfish_armv7_defconfig
+	gedit .config
+	#uncomment CONFIG_MODULES and set to CONFIG_MODULES=y
+	make -j32
+
+Now run the emulator with the new kernel.
+adb is in <path to sdk>/platform-tools/.
+
+Create our working directory within the emulator:
+	adb shell mkdir /data/kmod
+
+Install Busybox:
+	adb push busybox /data/kmod
+	adb shell chmod 755 /data/kmod/busybox
+
+Make and push the module - from Ninja dir:
+	make
+	adb push ninja.ko /data/kmod
+
+Load the module within the emulator:
+	adb shell
+	cd data/kmod
+	insmod ninja.ko
+	./busybox mknod /dev/ninja c 252 0
+
+Now import AttackSim into eclipse and run it, eclipse will detect that an emulator is running.
+
+Every change to the module requires compiling it again (run make in /Ninja), running the emulator, and loading the module.
+Every change to the JNI code within AttackSim requires compiling it again and running the app.
+
+Compiling JNI: run the following in the base dir of the app project (AttackSim)
+	<ndk path>/ndk-build
+
+AttackSim functionalities:
+	1. ROOT to change UID to 0.
+	2. UNROOT to reset to the original UID.
+	3. ROOT OPERATION - tries to perform some operation that needs some manifest permissions. If a Security Exception is thrown than return false, else retun true.
+	4. CHANGE SYSCALL - Choose a system call from the drop down menu and it will be changes to an existing function within the module.
+	5. BECOME THE CONTEXT MANAGER - Kill the current service manager and spawn a process to become the new one.

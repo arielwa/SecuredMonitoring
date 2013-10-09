@@ -1,0 +1,1 @@
+cmd_/media/data/KMod/hello.ko := /media/data/AndroidFramework/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-ld -EL -r   --build-id -o /media/data/KMod/hello.ko /media/data/KMod/hello.o /media/data/KMod/hello.mod.o

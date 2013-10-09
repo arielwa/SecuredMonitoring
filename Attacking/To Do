@@ -1,0 +1,112 @@
+8.10
+*finish an attack? take control of network?
+*activity manager pid 310 son of server manager (pid 293)
+
+7.10
+*file descriptors.
+*flag and see that all attacks work with eyal.
+*compile my binder with the whole kernel and then try to kill and replace the orig binder. - it is compiled as a static driver, can't manage to make a .ko out of it.
+*find an app to fool with binder messages. - can't install waze, couldn't find binder communication of the browser attending any service relevant (Which i dont know if exist), 
+
+6.10
+*sit with eyal make it all work
+*how to set up the env
+
+9.9
+*Why cant send a maliciuos service from the service manager? the recieving app casts the service object gotten from the service manager into the original service object, so returning anything other than that will break applications. Google services are defined as final classes so you cant inheret them (Apperently only some of them).
+*Why cant change the constant returned by the activity manager to services which check permissions? it seems that the constant is not sent through a binder by itself and that the service returns the constant togther with the exception/return value. meaning if its an exception than the method is not performed.
+*Apperantly the binder is the one that fills the uid/pid data in transaction so I wanted to replace the function that does that but it need way too many refrences within the binder driver (meaning i cant just copy its other functions/members).
+*Why can't I replace the whole binder? IT DOESN'T COMPILE outside of the kernel because of a few un-exported symbols (https://groups.google.com/forum/#!msg/android-platform/09CvX-Xxw7c/DuKuuKBX4wIJ)
+
+*Look now at read within ioctl, maybe i can change the uid/pid after the binder inserted it. - UNDERSTAND WHAT THE PRINTOUT MEANS
+*Look for a service which is not final and give it from the service manager (sms is final, cant test gps on emulator).
+*Try and intercept the communication with the activity manager although i dont think there is anything to it beyond regular method activation.
+*replace the binder
+
+*try to compile the framework and take the malformed service from there and try to use it in the app.
+*try and return changed data from the activity manager. (For example, the Waze attack).
+
+26.8
+*call get service "isms" and try to cast it. its supposed to be a IBinder after looking at ServiceManager
+
+14.8
+*go over, go over the article the hand written paper
+*look for phone
+*whats the difference between permission check in ContextImpl and within a service itself? I assume in ContextImpl it is just the way google did the other option for thier own services.
+
+5.8
+*replace the package manager and change its permission check function. NOT GOOD, either everybody has the pm refrence already or only the activity talks to him - either way it won't help replacing him, find out who and when he is talked too.
+*see what can be done about apps that already got a service from the manager, can i somehow change the process itself? kill it and start anew?
+*look at file descriptors of the services, make them think im the binder driver (can get thier msgs or send them stuff). for example catch all incoming msgs (possible cuz it needs to execute the binders read ioctl) to the activity manager and change the requesting uid to 0. THIS.
+*hook read or ioctl system call and try to fool the activity manager when talking to the package manager. AND THIS.
+
+4.8
+*man in the middle attack for services - let the service manager return a malicious service which will try to assume the same credintials as the recieving process and be a man in the middle.
+*replace the binder driver
+
+1.7
+*Find something to do with the new context manager that you couldn't do with the original one.
+*Get the new context manager to init all services in "service list" instead of doing it manually.
+*New attack! - changing sys call tab pointer, look where app permissions are saved - package manager?, replace default services using the context manager attack (would that be a data attack?).
+
+30.6
+*Refactor - ninja.c/ninja.h, all of the jni (open ninja is called twice (dealt with), duplicate constants, move service add out of binder? NO! service manager will stay "clean").
+*Write the whole process of the attack in the google drive document.
+*Send eiten an email that the attack is done with a brief explenation and add the document.
+
+24.6
+*send an add service request to the new binder. but first you should send a get msg to the orig so you have the ref ptr.
+   NO! you have everything you need inorder to create an add service message to yourself, just find out how they send the object/ref/whatever to bytes.
+*Cant get the service object from java, need to get it strigth from the original manager, try and send him a getService message from jni.
+
+17.6
+*Look at the context manager attack again, try copying its whole memory, make it work - try harder.
+*Send eitan the document after he answers you question and you finish the sys call attack descript.
+*Read Phrack again, he talks about changing the pointer to the sys tab itself - could be interesting.
+
+16.6
+*Write a document that describes every attack from start to beginning - Ask Etan how descriptive it should be.
+*Look where app permissions are saved, check if you can access them - package manager?
+*Check if it is possible to attack a driver, change its data or hook a call.
+*try and hook the zygote socket - how will the socket help? IT DOESN'T, also user space... =/
+
+3.6
+*Attack that changes the context manager (look at the way they make the ioctl flags and the import to jni). -tried this, failed miserably (REQUIERES USER SPACE!!)
+*See if you can get any app permissions in a different way than getting root.
+*Attack that replaces an existing service of a driver (For example, hooking the camera so it sends videos whenever its active).
+*Static compliation of the LKM.
+
+27.5
+*find specifec places flagging (sys_call_tab / uid).
+*change service maneger in binder.
+*hide/stop proccess from the schedular.
+*emulate gps(not so interesting - can just call it with root)/camera...
+
+26.5
+*find intresting places in memory to change (look at what rootkits do)
+*make ioctl calls for changing system calls and for the root me.
+
+23.5
+*try to execute root operations from app before and after module activation.
+*write to arbitrary memory. (ioctl)
+*find intresting places in memory to change (look at what rootkits do)
+
+22.5
+*download a non-emulator kernel and check to see if LKM's are enabled.
+*activate the LKM from an app.
+*get root for the app from the LKM.
+
+19.5
+*Looks like you can load KM's... need root?
+*how do rootkits work?
+*use km through app
+
+14.5
+*read about kernel modules using system calls
+*write a more intresting kernel module
+*download, setup and run a jni app to use the KM
+
+12.5
+*build android framework - run make -j32
+*need the kernel?
+*load kernel module to android framework
