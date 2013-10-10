@@ -25,3 +25,5 @@ Contains working code, settings and whatnot for:
     running the emulator, deploying a kernel module).
 
 8.  World domination (still in pre-alpha version). >=]
+
+Also contains an Explanations.docx file explaining everything.
