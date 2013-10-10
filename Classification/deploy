@@ -55,5 +55,5 @@ echo "Major ID = $MAJOR_ID"
 echo "Starting BusyBox..."
 $OPTION_ADB shell /data/local/busybox mknod /dev/$MODULE_NAME c $MAJOR_ID 0
 
-#All done!
+# All done!
 echo "Module deployed."
