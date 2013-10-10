@@ -1,0 +1,10 @@
+DroidScope:
+  - Mounting the file system of the VDI file (the virtual machine) to a local directory:
+    tomer@lab507e:~/Downloads/DroidScope$ sudo modprobe nbd
+    tomer@lab507e:~/Downloads/DroidScope$ sudo qemu-nbd -c /dev/nbd0 DroidScope.vdi
+    tomer@lab507e:~/Downloads/DroidScope$ sudo mount /dev/nbd0p1 ~/Android/DroidScope/vmfs
+  - Unmounting:
+    tomer@lab507e:~/Downloads/DroidScope$ sudo umount mnt
+    tomer@lab507e:~/Downloads/DroidScope$ sudo qemu-nbd -d /dev/nbd0
+    tomer@lab507e:~/Downloads/DroidScope$ sudo modprobe -r nbd
+    
