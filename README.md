@@ -15,27 +15,27 @@ Concise Instructions
     'C:\Users\AceVentura\Git\SecuredMonitoring', then go to
     'C:\Users\AceVentura\Git':
     
-    CD Your_Chosen_Directory
+        cd Your_Chosen_Directory
 
 2.  Clone the repository:
 
-    git clone https://github.com/arielwa/SecuredMonitoring.git SecuredMonitoring
+        git clone https://github.com/arielwa/SecuredMonitoring.git SecuredMonitoring
     
 3.  Run the script:
     
-    cd SecuredMonitoring
-    WindowsFix.bat
+        cd SecuredMonitoring
+        WindowsFix.bat
     
 4.  Check the status of your acquired repository:
     
-    git status
+        git status
     
 5.  You should see the following message, and nothing else (if you do see
     something else, try to figure out what's wrong and fix it yourself;
     if can't get it to work, ask Tomer (tomergod@post.bgu.ac.il) to give
     you a hand):
     
-    # On branch master
-    nothing to commit, working directory clean
+        # On branch master
+        nothing to commit, working directory clean
     
 6.  You can now begin working. Have fun! =)
