@@ -19,6 +19,9 @@ Options:
                    (should be a built Android kernel)
   -d DUMP_DIR      Directory in which dumped memory is stored (usually where
                    the emulator and emulator-arm files are located)
+  -m MAP_FILE      Generate map file
+  -p               Keep intermediary files
+  -t               Silent dump mode (do not show dumpMem outputs)
   
 Report bugs to whomever is in charge nowadays.
 EOF
@@ -27,11 +30,11 @@ EOF
 OPTIND=1         # Reset in case getopts has been used previously in the shell.
 
 # Default option values
-vmlinux_file="vmlinux.o"
-system_map_file="System.map"
-kernel_dir="."
-output_file="Snapshot"
-dump_dir="."
+#vmlinux_file="vmlinux.o"
+#system_map_file="System.map"
+#kernel_dir="."
+#output_file="Snapshot"
+#dump_dir="."
 
 # Constant values
 TABLE_FILE="KernelTable"
@@ -39,7 +42,7 @@ TABLE_FILE="KernelTable"
 
 
 # Parse command line arguments
-while getopts "h?r:o:v:s:k:d:" opt; do
+while getopts "h?r:o:v:s:k:d:m:pt" opt; do
     case "$opt" in
     h|\?)
         echo "$help"
@@ -57,6 +60,12 @@ while getopts "h?r:o:v:s:k:d:" opt; do
         ;;
     d)  dump_dir=$OPTARG
         ;;
+    m)  map_file=$OPTARG
+        ;;
+    p)  keep_intermediaries=1
+        ;;
+    t)  silent_dump=1
+        ;;
     esac
 done
 
@@ -71,15 +80,30 @@ then
 fi
 
 
+# Gather optional parameters for each of the invoked scripts
+if [ "$system_map_file"     != "" ]; then generate_params="$generate_params -s $system_map_file"; fi
+if [ "$vmlinux_file"        != "" ]; then generate_params="$generate_params -v $vmlinux_file"   ; fi
+if [ "$kernel_dir"          != "" ]; then generate_params="$generate_params -k $kernel_dir"     ; fi
+if [ "$keep_intermediaries" != "" ]; then generate_params="$generate_params -p"                 ; fi
+
+if [ "$dump_dir"            != "" ]; then dump_params="$dump_params -d $dump_dir"    ; fi
+if [ "$map_file"            != "" ]; then dump_params="$dump_params -m $map_file"    ; fi
+if [ "$output_file"         != "" ]; then dump_params="$dump_params -o $output_file" ; fi
+if [ "$keep_intermediaries" != "" ]; then dump_params="$dump_params -p"              ; fi
+if [ "$silent_dump"         != "" ]; then dump_params="$dump_params -t"              ; fi
+
 #./generateTable -k /home/tomer/Android/kernels/goldfishWorking_Eyal 'StructInstance'
 #./dumpTable KernelTable Snapshot > /dev/null
 #./dumpTable -o Snapshot -d /home/tomer/Android/AndroidSDK/sdk/tools KernelTable
 
 # Generate the table file using the parameters we were given
-./generateTable -s $system_map_file -v $vmlinux_file -k $kernel_dir -o $TABLE_FILE -r $regex
+./generateTable $generate_params -r $regex
 
 # Create a memory dump according to the table file created
-./dumpTable -o $output_file -d $dump_dir -i $TABLE_FILE > /dev/null
+./dumpTable $dump_params -i $TABLE_FILE
 
-# Remove intermediary files
-rm $TABLE_FILE
+# Remove intermediary files, unless specifically asked not to
+if [ ! $keep_intermediaries ];
+then
+  rm $TABLE_FILE
+fi

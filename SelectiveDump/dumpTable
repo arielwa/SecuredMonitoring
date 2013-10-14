@@ -14,6 +14,11 @@ Options:
   -o OUTPUT_FILE   Write the output to this file
   -d DUMP_DIR      Directory in which dumped memory is stored (usually where
                    the emulator and emulator-arm files are located)
+  -m MAP_FILE      Generate map file
+  -f OFFSET_SHIFT  Value by which all addresses in map file are offset
+                   (default is 0xc0000000)
+  -p               Keep intermediary files
+  -t               Silent dump mode (do not show dumpMem outputs)
   
 Report bugs to whomever is in charge nowadays.
 EOF
@@ -24,10 +29,11 @@ OPTIND=1         # Reset in case getopts has been used previously in the shell.
 # Default option values
 output_file="Snapshot"
 dump_dir="."
+offset_shift=0xc0000000
 
 
 # Parse command line arguments
-while getopts "h?i:o:d:" opt; do
+while getopts "h?i:o:d:m:f:pt" opt; do
     case "$opt" in
     h|\?)
         echo "$help"
@@ -38,6 +44,14 @@ while getopts "h?i:o:d:" opt; do
     o)  output_file=$OPTARG
         ;;
     d)  dump_dir=$OPTARG
+        ;;
+    m)  map_file=$OPTARG
+        ;;
+    f)  offset_shift=$OPTARG
+        ;;
+    p)  keep_intermediaries=1
+        ;;
+    t)  silent_dump=1
         ;;
     esac
 done
@@ -52,19 +66,46 @@ then
   exit 0
 fi
 
+# If a map file was requested, clear the file if it exists
+if [ "$map_file" != "" ];
+then
+  > $map_file
+fi
+
 # Dump the memory corresponding to each marked global variable to its own file
 while read line; do
-  ./dumpMem $line
+  # Transform the lines in the given input file
+  name=`echo $line | sed 's/\(.*\) \(.*\) \(.*\)/\1/'`
+  addr=`echo $line | sed 's/\(.*\) \(.*\) \(.*\)/\2/'`
+  size=`echo $line | sed 's/\(.*\) \(.*\) \(.*\)/\3/'`
+  addr=`printf "%X\n" $((0x$addr - $offset_shift))`
+  
+  # If a map file was request it, append this line to it
+  if [ "$map_file" != "" ]
+  then
+    echo $name $addr $size >> $map_file
+  fi
+  
+  # Dump the specified memory
+  if [ $silent_dump ]
+  then
+    ./dumpMem $name $addr $size > /dev/null
+  else
+    ./dumpMem $name $addr $size
+  fi
 done < $input_file
 
 # Gather all the dumped files, if necessary
-if [ "$dump_dir" != "." ];
+if [ "$dump_dir" != "." ]
 then
-  mv /home/tomer/Android/AndroidSDK/sdk/tools/*.mem ./
+  mv $dump_dir/*.mem ./
 fi
 
 # Combine all the dumped files
 cat *.mem >> $output_file
 
-# Remove the individual files
-rm *.mem
+# Remove the individual files, unless specifically asked not to
+if [ ! $keep_intermediaries ]
+then
+  rm *.mem
+fi
