@@ -73,18 +73,27 @@ then
 fi
 
 # Dump the memory corresponding to each marked global variable to its own file
+num_of_lines=$(wc -l < "$input_file")
+name_prefix_digits=${#num_of_lines}
+counter=0
 while read line; do
-  # Transform the lines in the given input file
-  name=`echo $line | sed 's/\(.*\) \(.*\) \(.*\)/\1/'`
-  addr=`echo $line | sed 's/\(.*\) \(.*\) \(.*\)/\2/'`
-  size=`echo $line | sed 's/\(.*\) \(.*\) \(.*\)/\3/'`
-  addr=`printf "%X\n" $((0x$addr - $offset_shift))`
+  # Parse the lines in the given input file (without leading zeros on size field)
+  name=`echo $line | sed 's/\(.*\) \(.*\) 0*\(.*\)/\1/'`
+  addr=`echo $line | sed 's/\(.*\) \(.*\) 0*\(.*\)/\2/'`
+  size=`echo $line | sed 's/\(.*\) \(.*\) 0*\(.*\)/\3/'`
+  
+  # Transform the address
+  addr=`printf "%X" $((0x$addr - $offset_shift))`
   
   # If a map file was request it, append this line to it
   if [ "$map_file" != "" ]
   then
     echo $name $addr $size >> $map_file
   fi
+  
+  # Attach an increasing number to the beginning of the name, so as to preserve
+  # the relative order of the entries in the final file
+  name=`printf "%0${name_prefix_digits}d" $counter`_$name
   
   # Dump the specified memory
   if [ $silent_dump ]
@@ -93,6 +102,8 @@ while read line; do
   else
     ./dumpMem $name $addr $size
   fi
+  
+  counter=$((counter + 1))
 done < $input_file
 
 # Gather all the dumped files, if necessary
