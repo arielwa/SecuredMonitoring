@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+
+spawn telnet localhost 4444
+expect "(qemu)"	
+send "pmemsave 0x[lindex $argv 1] [lindex $argv 2] [lindex $argv 0].mem\n"
+expect "(qemu)"	
+send "\x1d"
+expect "telnet>"
+send "close\n"
+expect "Connection closed"

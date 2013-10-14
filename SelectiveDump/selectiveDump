@@ -1,0 +1,85 @@
+#!/bin/bash
+
+
+read -d '' help <<-EOF
+
+Selective Dump Utility, by Tomer Godinger, October 2013
+Dumps only selected memory areas of a currently running QEMU emulator
+into a file. The selection is done using a REGEX match of system variables.
+
+Usage: selectiveDump [OPTION] -r REGEX
+
+Options:
+  -h, -?           Print this information
+  -r REGEX         The regular expression to match
+  -o OUTPUT_FILE   Write the output to this file
+  -v VMLINUX_FILE  The vmlinux.o file to analyze
+  -s SYSTEM_MAP    The System.map file to analyze
+  -k KERNEL_DIR    Directory in which to search for the required files
+                   (should be a built Android kernel)
+  -d DUMP_DIR      Directory in which dumped memory is stored (usually where
+                   the emulator and emulator-arm files are located)
+  
+Report bugs to whomever is in charge nowadays.
+EOF
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+# Default option values
+vmlinux_file="vmlinux.o"
+system_map_file="System.map"
+kernel_dir="."
+output_file="Snapshot"
+dump_dir="."
+
+# Constant values
+TABLE_FILE="KernelTable"
+
+
+
+# Parse command line arguments
+while getopts "h?r:o:v:s:k:d:" opt; do
+    case "$opt" in
+    h|\?)
+        echo "$help"
+        exit 0
+        ;;
+    r)  regex=$OPTARG
+        ;;
+    o)  output_file=$OPTARG
+        ;;
+    v)  vmlinux_file=$OPTARG
+        ;;
+    s)  system_map_file=$OPTARG
+        ;;
+    k)  kernel_dir=$OPTARG
+        ;;
+    d)  dump_dir=$OPTARG
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+if [ "$regex" == "" ];
+then
+  echo "$help"
+  exit 0
+fi
+
+
+#./generateTable -k /home/tomer/Android/kernels/goldfishWorking_Eyal 'StructInstance'
+#./dumpTable KernelTable Snapshot > /dev/null
+#./dumpTable -o Snapshot -d /home/tomer/Android/AndroidSDK/sdk/tools KernelTable
+
+# Generate the table file using the parameters we were given
+./generateTable -s $system_map_file -v $vmlinux_file -k $kernel_dir -o $TABLE_FILE -r $regex
+
+# Create a memory dump according to the table file created
+./dumpTable -o $output_file -d $dump_dir -i $TABLE_FILE > /dev/null
+
+# Remove intermediary files
+rm $TABLE_FILE

@@ -1,0 +1,70 @@
+#!/bin/bash
+
+read -d '' help <<-EOF
+
+Dump Table Utility, by Tomer Godinger, October 2013
+Using a file created by the generateTable utility, dumps all the memory
+described in the input file into a single binary file.
+
+Usage: dumpTable [OPTION] -i TABLE_FILE
+
+Options:
+  -h, -?           Print this information
+  -i TABLE_FILE    The table file according to which to create the dump
+  -o OUTPUT_FILE   Write the output to this file
+  -d DUMP_DIR      Directory in which dumped memory is stored (usually where
+                   the emulator and emulator-arm files are located)
+  
+Report bugs to whomever is in charge nowadays.
+EOF
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+# Default option values
+output_file="Snapshot"
+dump_dir="."
+
+
+# Parse command line arguments
+while getopts "h?i:o:d:" opt; do
+    case "$opt" in
+    h|\?)
+        echo "$help"
+        exit 0
+        ;;
+    i)  input_file=$OPTARG
+        ;;
+    o)  output_file=$OPTARG
+        ;;
+    d)  dump_dir=$OPTARG
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+if [ "$input_file" == "" ];
+then
+  echo "$help"
+  exit 0
+fi
+
+# Dump the memory corresponding to each marked global variable to its own file
+while read line; do
+  ./dumpMem $line
+done < $input_file
+
+# Gather all the dumped files, if necessary
+if [ "$dump_dir" != "." ];
+then
+  mv /home/tomer/Android/AndroidSDK/sdk/tools/*.mem ./
+fi
+
+# Combine all the dumped files
+cat *.mem >> $output_file
+
+# Remove the individual files
+rm *.mem
