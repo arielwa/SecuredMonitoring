@@ -113,6 +113,7 @@ then
 fi
 
 # Combine all the dumped files
+> $output_file
 cat *.mem >> $output_file
 
 # Remove the individual files, unless specifically asked not to
