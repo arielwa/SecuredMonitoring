@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./selectiveDump -o SelectiveSnapshot -d /home/eyalshem/Android/AndroidSDK/sdk/tools -k /home/eyalshem/Android/kernels/goldfishWorking -t -r 'StructInstance'
