@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Print all the -D flags of a given set of compiler commands
+cat $@ | grep -o '\-D\([^ ]*\)' | sort | uniq

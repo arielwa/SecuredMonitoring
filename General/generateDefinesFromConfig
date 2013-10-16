@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Generate a file with #define's from a given configuration file
+cat $@ | grep '^[^#]' | grep -v 'is not set$' | sed 's/^\([^#].*\)=\(.*\)$/#define \1 \2/' | sed 's/ y$//'
