@@ -1,0 +1,836 @@
+<6>Initializing cgroup subsys cpu
+<5>Linux version 2.6.29-ge3d684d-dirty (tomer@lab507e) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #10 Tue Oct 15 16:29:53 IDT 2013
+<4>CPU: ARMv7 Processor [410fc080] revision 0 (ARMv7), cr=10c5387f
+<4>CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+<4>Machine: Goldfish
+<4>Memory policy: ECC disabled, Data cache writeback
+<7>On node 0 totalpages: 51200
+<7>free_area_init_node: node 0, pgdat c032b610, node_mem_map c03b9000
+<7>  Normal zone: 400 pages used for memmap
+<7>  Normal zone: 0 pages reserved
+<7>  Normal zone: 50800 pages, LIFO batch:15
+<4>Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 50800
+<5>Kernel command line: qemu.gles=0 qemu=1 console=ttyS0 android.qemud=ttyS1 android.checkjni=1 ndns=1
+<3>Unknown boot option `qemu.gles=0': ignoring
+<3>Unknown boot option `android.qemud=ttyS1': ignoring
+<3>Unknown boot option `android.checkjni=1': ignoring
+<4>PID hash table entries: 1024 (order: 10, 4096 bytes)
+<4>Console: colour dummy device 80x30
+<6>Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>Memory: 200MB = 200MB total
+<5>Memory: 198784KB available (2940K code, 707K data, 124K init)
+<6>Calibrating delay loop... 827.39 BogoMIPS (lpj=4136960)
+<4>Mount-cache hash table entries: 512
+<6>Initializing cgroup subsys debug
+<6>Initializing cgroup subsys cpuacct
+<6>Initializing cgroup subsys freezer
+<6>CPU: Testing write buffer coherency: ok
+<4>[StackHunt] Kernel stack allocated at: 0x0c01e000
+<4>[StackHunt] Kernel stack allocated at: 0x0c020000
+<4>[StackHunt] Kernel stack allocated at: 0x0c022000
+<4>[StackHunt] Kernel stack allocated at: 0x0c024000
+<4>[StackHunt] Kernel stack allocated at: 0x0c026000
+<6>net_namespace: 936 bytes
+<4>[StackHunt] Kernel stack allocated at: 0x0c038000
+<6>NET: Registered protocol family 16
+<4>bio: create slab <bio-0> at 0
+<4>[StackHunt] Kernel stack allocated at: 0x0c05a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c05c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c06c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c06e000
+<6>NET: Registered protocol family 2
+<6>IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+<7>Switched to high resolution mode on CPU 0
+<6>TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+<6>TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+<6>TCP: Hash tables configured (established 8192 bind 8192)
+<6>TCP reno registered
+<6>NET: Registered protocol family 1
+<6>checking if image is initramfs... it is
+<6>Freeing initrd memory: 228K
+<4>goldfish_new_pdev goldfish_interrupt_controller at ff000000 irq -1
+<4>goldfish_new_pdev goldfish_device_bus at ff001000 irq 1
+<4>goldfish_new_pdev goldfish_timer at ff003000 irq 3
+<4>goldfish_new_pdev goldfish_rtc at ff010000 irq 10
+<4>goldfish_new_pdev goldfish_tty at ff002000 irq 4
+<4>goldfish_new_pdev goldfish_tty at ff011000 irq 11
+<4>goldfish_new_pdev goldfish_tty at ff012000 irq 12
+<4>goldfish_new_pdev smc91x at ff013000 irq 13
+<4>goldfish_new_pdev goldfish_fb at ff014000 irq 14
+<4>goldfish_new_pdev goldfish_audio at ff004000 irq 15
+<4>goldfish_new_pdev goldfish_mmc at ff005000 irq 16
+<4>goldfish_new_pdev goldfish_memlog at ff006000 irq -1
+<4>goldfish_new_pdev goldfish-battery at ff015000 irq 17
+<4>goldfish_new_pdev goldfish_events at ff016000 irq 18
+<4>goldfish_new_pdev goldfish_nand at ff017000 irq -1
+<4>goldfish_new_pdev qemu_pipe at ff018000 irq 19
+<4>goldfish_new_pdev goldfish-switch at ff01a000 irq 20
+<4>goldfish_new_pdev goldfish-switch at ff01b000 irq 21
+<4>goldfish_pdev_worker registered goldfish_interrupt_controller
+<4>goldfish_pdev_worker registered goldfish_device_bus
+<4>goldfish_pdev_worker registered goldfish_timer
+<4>goldfish_pdev_worker registered goldfish_rtc
+<4>goldfish_pdev_worker registered goldfish_tty
+<4>goldfish_pdev_worker registered goldfish_tty
+<4>goldfish_pdev_worker registered goldfish_tty
+<4>goldfish_pdev_worker registered smc91x
+<4>goldfish_pdev_worker registered goldfish_fb
+<4>goldfish_pdev_worker registered goldfish_audio
+<4>goldfish_pdev_worker registered goldfish_mmc
+<4>goldfish_pdev_worker registered goldfish_memlog
+<4>goldfish_pdev_worker registered goldfish-battery
+<4>goldfish_pdev_worker registered goldfish_events
+<4>goldfish_pdev_worker registered goldfish_nand
+<4>goldfish_pdev_worker registered qemu_pipe
+<4>goldfish_pdev_worker registered goldfish-switch
+<4>goldfish_pdev_worker registered goldfish-switch
+<4>[StackHunt] Kernel stack allocated at: 0x0c122000
+<4>[StackHunt] Kernel stack allocated at: 0x0c124000
+<4>[StackHunt] Kernel stack allocated at: 0x0c126000
+<6>ashmem: initialized
+<4>[StackHunt] Kernel stack allocated at: 0x0c128000
+<6>Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+<6>fuse init (API version 7.11)
+<4>yaffs Oct 15 2013 15:13:41 Installing. 
+<6>msgmni has been set to 389
+<4>[StackHunt] Kernel stack allocated at: 0x0c148000
+<4>[StackHunt] Kernel stack allocated at: 0x0c14a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c14c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c14e000
+<4>[StackHunt] Kernel stack allocated at: 0x0c150000
+<4>[StackHunt] Kernel stack allocated at: 0x0c152000
+<4>[StackHunt] Kernel stack allocated at: 0x0c154000
+<4>[StackHunt] Kernel stack allocated at: 0x0c156000
+<4>[StackHunt] Kernel stack allocated at: 0x0c158000
+<4>[StackHunt] Kernel stack allocated at: 0x0c15a000
+<6>alg: No test for stdrng (krng)
+<6>io scheduler noop registered
+<6>io scheduler anticipatory registered (default)
+<6>io scheduler deadline registered
+<6>io scheduler cfq registered
+<4>allocating frame buffer 768 * 1280, got ffa00000
+<6>console [ttyS0] enabled
+<6>brd: module loaded
+<6>loop: module loaded
+<6>nbd: registered device at major 43
+<4>goldfish_audio_probe
+<6>tun: Universal TUN/TAP device driver, 1.6
+<6>tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+<4>smc91x.c: v1.1, sep 22 2004 by Nicolas Pitre <nico@cam.org>
+<6>eth0 (smc91x): not using net_device_ops yet
+<4>eth0: SMC91C11xFD (rev 1) at cd00c000 IRQ 13 [nowait]
+<4>eth0: Ethernet addr: 52:54:00:12:34:56
+<7>eth0: No PHY found
+<4>[StackHunt] Kernel stack allocated at: 0x0c16a000
+<4>goldfish nand dev0: size d380000, page 2048, extra 64, erase 131072
+<4>goldfish nand dev1: size 12300000, page 2048, extra 64, erase 131072
+<4>goldfish nand dev2: size 4000000, page 2048, extra 64, erase 131072
+<6>mice: PS/2 mouse device common for all mice
+<4>*** events probe ***
+<4>events_probe() addr=0xcd014000 irq=18
+<4>events_probe() keymap=qwerty2
+<6>input: qwerty2 as /devices/virtual/input/input0
+<6>goldfish_rtc goldfish_rtc: rtc core: registered goldfish_rtc as rtc0
+<6>device-mapper: uevent: version 1.0.3
+<4>[StackHunt] Kernel stack allocated at: 0x0c18c000
+<6>device-mapper: ioctl: 4.14.0-ioctl (2008-04-23) initialised: dm-devel@redhat.com
+<4>[StackHunt] Kernel stack allocated at: 0x0c18e000
+<6>logger: created 64K log 'log_main'
+<6>logger: created 256K log 'log_events'
+<6>logger: created 64K log 'log_radio'
+<4>Netfilter messages via NETLINK v0.30.
+<4>nf_conntrack version 0.5.0 (3200 buckets, 12800 max)
+<4>CONFIG_NF_CT_ACCT is deprecated and will be removed soon. Please use
+<4>nf_conntrack.acct=1 kernel paramater, acct=1 nf_conntrack module option or
+<4>sysctl net.netfilter.nf_conntrack_acct=1 to enable it.
+<4>ctnetlink v0.93: registering with nfnetlink.
+<6>NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>xt_time: kernel timezone is -0000
+<6>ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>arp_tables: (C) 2002 David S. Miller
+<6>TCP cubic registered
+<6>NET: Registered protocol family 10
+<6>ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>IPv6 over IPv4 tunneling driver
+<6>NET: Registered protocol family 17
+<6>NET: Registered protocol family 15
+<4>[StackHunt] Kernel stack allocated at: 0x0c14e000
+<6>RPC: Registered udp transport module.
+<6>RPC: Registered tcp transport module.
+<6>802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+<6>All bugs added by David S. Miller <davem@redhat.com>
+<6>VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 0
+<6>goldfish_rtc goldfish_rtc: setting system clock to 2013-10-15 13:30:02 UTC (1381843802)
+<6>Freeing init memory: 124K
+<6>mmc0: new SD card at address e118
+<4>[StackHunt] Kernel stack allocated at: 0x0c1fa000
+<6>mmcblk0: mmc0:e118 SU02G 32.0 MiB 
+<6> mmcblk0:
+<4>SELinux:  Could not mount selinuxfs:  No such device
+<4>[StackHunt] Kernel stack allocated at: 0x0c1fc000
+<3>init: cannot open '/initlogo.rle'
+<6>yaffs: dev is 32505856 name is "mtdblock0"
+<6>yaffs: passed flags ""
+<4>yaffs: Attempting MTD mount on 31.0, "mtdblock0"
+<4>yaffs_read_super: isCheckpointed 0
+<4>save exit: isCheckpointed 0
+<6>yaffs: dev is 32505857 name is "mtdblock1"
+<6>yaffs: passed flags ""
+<4>yaffs: Attempting MTD mount on 31.1, "mtdblock1"
+<4>yaffs_read_super: isCheckpointed 0
+<6>yaffs: dev is 32505858 name is "mtdblock2"
+<6>yaffs: passed flags ""
+<4>yaffs: Attempting MTD mount on 31.2, "mtdblock2"
+<4>yaffs_read_super: isCheckpointed 0
+<4>[StackHunt] Kernel stack allocated at: 0x0c2fa000
+<4>[StackHunt] Kernel stack allocated at: 0x0c312000
+<4>[StackHunt] Kernel stack allocated at: 0x0c318000
+<4>[StackHunt] Kernel stack allocated at: 0x0c31a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c324000
+<4>[StackHunt] Kernel stack allocated at: 0x0c33a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c340000
+<4>[StackHunt] Kernel stack allocated at: 0x0c342000
+<4>[StackHunt] Kernel stack allocated at: 0x0c34c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c360000
+<4>[StackHunt] Kernel stack allocated at: 0x0c362000
+<3>init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<4>[StackHunt] Kernel stack allocated at: 0x0c36c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c382000
+<4>[StackHunt] Kernel stack allocated at: 0x0c388000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c394000
+<4>[StackHunt] Kernel stack allocated at: 0x0c398000
+<4>[StackHunt] Kernel stack allocated at: 0x0c388000
+<4>[StackHunt] Kernel stack allocated at: 0x0c39a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3ca000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3d0000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3d2000
+<4>[StackHunt] Kernel stack allocated at: 0x0c388000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3f6000
+<6>eth0: link up
+<4>[StackHunt] Kernel stack allocated at: 0x0c39a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3e4000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3ca000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3ba000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3cc000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3f6000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3ca000
+<4>[StackHunt] Kernel stack allocated at: 0x0c39a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c388000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3f6000
+<4>[StackHunt] Kernel stack allocated at: 0x0c388000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3fe000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3f6000
+<4>[StackHunt] Kernel stack allocated at: 0x0c39a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b406000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<6>warning: `rild' uses 32-bit capabilities (legacy support in use)
+<4>[StackHunt] Kernel stack allocated at: 0x0c38c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b40c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b41e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b434000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0b434000
+<4>[StackHunt] Kernel stack allocated at: 0x0b436000
+<4>[StackHunt] Kernel stack allocated at: 0x0b450000
+<4>[StackHunt] Kernel stack allocated at: 0x0b452000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0b444000
+<4>[StackHunt] Kernel stack allocated at: 0x0b446000
+<4>[StackHunt] Kernel stack allocated at: 0x0b458000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0b436000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0b436000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0b456000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b436000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b46c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b48c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b468000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b49c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b470000
+<4>[StackHunt] Kernel stack allocated at: 0x0b472000
+<4>[StackHunt] Kernel stack allocated at: 0x0b490000
+<4>[StackHunt] Kernel stack allocated at: 0x0b492000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4a0000
+<7>eth0: no IPv6 routers present
+<4>[StackHunt] Kernel stack allocated at: 0x0b454000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4b6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b436000
+<4>[StackHunt] Kernel stack allocated at: 0x0b456000
+<4>[StackHunt] Kernel stack allocated at: 0x0b408000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4ba000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4bc000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4be000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4c0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4c2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4d2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4d4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4d6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4d8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4da000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4dc000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4de000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4e0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4e0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4f2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4f4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b504000
+<4>[StackHunt] Kernel stack allocated at: 0x0b506000
+<4>[StackHunt] Kernel stack allocated at: 0x0b508000
+<4>[StackHunt] Kernel stack allocated at: 0x0b50a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b50c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b522000
+<4>[StackHunt] Kernel stack allocated at: 0x0b524000
+<4>[StackHunt] Kernel stack allocated at: 0x0b526000
+<4>[StackHunt] Kernel stack allocated at: 0x0b522000
+<4>[StackHunt] Kernel stack allocated at: 0x0b50c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b50c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b522000
+<4>[StackHunt] Kernel stack allocated at: 0x0b524000
+<4>[StackHunt] Kernel stack allocated at: 0x0b526000
+<4>[StackHunt] Kernel stack allocated at: 0x0b508000
+<6>request_suspend_state: wakeup (3->0) at 18924437610 (2013-10-15 13:30:21.015822605 UTC)
+<4>[StackHunt] Kernel stack allocated at: 0x0b50a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b510000
+<4>[StackHunt] Kernel stack allocated at: 0x0b512000
+<4>[StackHunt] Kernel stack allocated at: 0x0b528000
+<4>[StackHunt] Kernel stack allocated at: 0x0b522000
+<4>[StackHunt] Kernel stack allocated at: 0x0b52a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b52c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b52e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b530000
+<4>[StackHunt] Kernel stack allocated at: 0x0b532000
+<4>[StackHunt] Kernel stack allocated at: 0x0b534000
+<4>[StackHunt] Kernel stack allocated at: 0x0b544000
+<4>[StackHunt] Kernel stack allocated at: 0x0b546000
+<4>[StackHunt] Kernel stack allocated at: 0x0b548000
+<4>[StackHunt] Kernel stack allocated at: 0x0b54a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b54c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b534000
+<4>[StackHunt] Kernel stack allocated at: 0x0b54e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b550000
+<4>[StackHunt] Kernel stack allocated at: 0x0b552000
+<4>[StackHunt] Kernel stack allocated at: 0x0b564000
+<4>[StackHunt] Kernel stack allocated at: 0x0b566000
+<4>[StackHunt] Kernel stack allocated at: 0x0b568000
+<4>[StackHunt] Kernel stack allocated at: 0x0b56a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b56c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b56e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b570000
+<4>[StackHunt] Kernel stack allocated at: 0x0b572000
+<4>[StackHunt] Kernel stack allocated at: 0x0b574000
+<4>[StackHunt] Kernel stack allocated at: 0x0b576000
+<4>[StackHunt] Kernel stack allocated at: 0x0b584000
+<4>[StackHunt] Kernel stack allocated at: 0x0b586000
+<4>[StackHunt] Kernel stack allocated at: 0x0b588000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ac000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ae000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5b0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5b2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5c4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5f2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5c6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4b6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b4b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5c4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b664000
+<4>[StackHunt] Kernel stack allocated at: 0x0b666000
+<4>[StackHunt] Kernel stack allocated at: 0x0b668000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ac000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5b0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ae000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ee000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ac000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5da000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ee000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ee000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ee000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5d4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5ee000
+<4>[StackHunt] Kernel stack allocated at: 0x0b64e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5dc000
+<4>[StackHunt] Kernel stack allocated at: 0x0b5de000
+<4>[StackHunt] Kernel stack allocated at: 0x0b650000
+<4>[StackHunt] Kernel stack allocated at: 0x0b600000
+<4>[StackHunt] Kernel stack allocated at: 0x0b612000
+<4>[StackHunt] Kernel stack allocated at: 0x0b614000
+<4>[StackHunt] Kernel stack allocated at: 0x0b638000
+<4>[StackHunt] Kernel stack allocated at: 0x0b63a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b612000
+<4>[StackHunt] Kernel stack allocated at: 0x0b63c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b63e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b664000
+<4>[StackHunt] Kernel stack allocated at: 0x0b668000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b680000
+<4>[StackHunt] Kernel stack allocated at: 0x0b682000
+<4>[StackHunt] Kernel stack allocated at: 0x0b684000
+<4>[StackHunt] Kernel stack allocated at: 0x0b686000
+<4>[StackHunt] Kernel stack allocated at: 0x0b688000
+<4>[StackHunt] Kernel stack allocated at: 0x0b698000
+<4>[StackHunt] Kernel stack allocated at: 0x0b69a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b69c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6c0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6c2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6c4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6c6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b63c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b612000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6d6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6d8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6da000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6dc000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6de000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6e0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6f0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6f2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6f4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b718000
+<4>[StackHunt] Kernel stack allocated at: 0x0b71a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b71c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b71e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b6c0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b688000
+<4>[StackHunt] Kernel stack allocated at: 0x0b72c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b72e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b730000
+<4>[StackHunt] Kernel stack allocated at: 0x0b732000
+<4>[StackHunt] Kernel stack allocated at: 0x0b734000
+<4>[StackHunt] Kernel stack allocated at: 0x0b736000
+<4>[StackHunt] Kernel stack allocated at: 0x0b738000
+<4>[StackHunt] Kernel stack allocated at: 0x0b75c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b75e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b760000
+<4>[StackHunt] Kernel stack allocated at: 0x0b770000
+<4>[StackHunt] Kernel stack allocated at: 0x0b772000
+<4>[StackHunt] Kernel stack allocated at: 0x0b718000
+<4>[StackHunt] Kernel stack allocated at: 0x0b71c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b71e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b774000
+<4>[StackHunt] Kernel stack allocated at: 0x0b776000
+<4>[StackHunt] Kernel stack allocated at: 0x0b788000
+<4>[StackHunt] Kernel stack allocated at: 0x0b78a000
+<4>[StackHunt] Kernel stack allocated at: 0x0b78c000
+<4>[StackHunt] Kernel stack allocated at: 0x0b78e000
+<4>[StackHunt] Kernel stack allocated at: 0x0b790000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7a0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7a2000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7a4000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7a6000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7a8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7b8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7ba000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7bc000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7ba000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7cc000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7ce000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7d8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7d8000
+<4>[StackHunt] Kernel stack allocated at: 0x0b7da000
+<4>[StackHunt] Kernel stack allocated at: 0x0240c000
+<4>[StackHunt] Kernel stack allocated at: 0x0240e000
+<4>[StackHunt] Kernel stack allocated at: 0x02410000
+<4>[StackHunt] Kernel stack allocated at: 0x02412000
+<4>[StackHunt] Kernel stack allocated at: 0x0b770000
+<4>[StackHunt] Kernel stack allocated at: 0x0b760000
+<4>[StackHunt] Kernel stack allocated at: 0x0b75c000
+<4>[StackHunt] Kernel stack allocated at: 0x02414000
+<4>[StackHunt] Kernel stack allocated at: 0x02416000
+<4>[StackHunt] Kernel stack allocated at: 0x02428000
+<4>[StackHunt] Kernel stack allocated at: 0x0242a000
+<4>[StackHunt] Kernel stack allocated at: 0x0242c000
+<4>[StackHunt] Kernel stack allocated at: 0x0242e000
+<4>[StackHunt] Kernel stack allocated at: 0x0242a000
+<4>[StackHunt] Kernel stack allocated at: 0x02430000
+<4>[StackHunt] Kernel stack allocated at: 0x02432000
+<4>[StackHunt] Kernel stack allocated at: 0x02434000
+<4>[StackHunt] Kernel stack allocated at: 0x02436000
+<4>[StackHunt] Kernel stack allocated at: 0x02468000
+<4>[StackHunt] Kernel stack allocated at: 0x0246a000
+<4>[StackHunt] Kernel stack allocated at: 0x0246c000
+<4>[StackHunt] Kernel stack allocated at: 0x0246e000
+<4>[StackHunt] Kernel stack allocated at: 0x02470000
+<4>[StackHunt] Kernel stack allocated at: 0x0240c000
+<4>[StackHunt] Kernel stack allocated at: 0x02472000
+<4>[StackHunt] Kernel stack allocated at: 0x02410000
+<4>[StackHunt] Kernel stack allocated at: 0x02412000
+<4>[StackHunt] Kernel stack allocated at: 0x02474000
+<4>[StackHunt] Kernel stack allocated at: 0x02484000
+<4>[StackHunt] Kernel stack allocated at: 0x02432000
+<4>[StackHunt] Kernel stack allocated at: 0x02472000
+<4>[StackHunt] Kernel stack allocated at: 0x02486000
+<4>[StackHunt] Kernel stack allocated at: 0x02488000
+<4>[StackHunt] Kernel stack allocated at: 0x0248a000
+<4>[StackHunt] Kernel stack allocated at: 0x0248c000
+<4>[StackHunt] Kernel stack allocated at: 0x0249a000
+<4>[StackHunt] Kernel stack allocated at: 0x0249c000
+<4>[StackHunt] Kernel stack allocated at: 0x0249e000
+<4>[StackHunt] Kernel stack allocated at: 0x024a0000
+<4>[StackHunt] Kernel stack allocated at: 0x024a2000
+<4>[StackHunt] Kernel stack allocated at: 0x024a0000
+<4>[StackHunt] Kernel stack allocated at: 0x024a4000
+<4>[StackHunt] Kernel stack allocated at: 0x024a6000
+<4>[StackHunt] Kernel stack allocated at: 0x024a8000
+<4>[StackHunt] Kernel stack allocated at: 0x024a8000
+<4>[StackHunt] Kernel stack allocated at: 0x024aa000
+<4>[StackHunt] Kernel stack allocated at: 0x024ac000
+<4>[StackHunt] Kernel stack allocated at: 0x024ae000
+<4>[StackHunt] Kernel stack allocated at: 0x024c0000
+<4>[StackHunt] Kernel stack allocated at: 0x024c2000
+<4>[StackHunt] Kernel stack allocated at: 0x024c2000
+<4>[StackHunt] Kernel stack allocated at: 0x024d2000
+<4>[StackHunt] Kernel stack allocated at: 0x024a8000
+<4>[StackHunt] Kernel stack allocated at: 0x0c33a000
+<4>[StackHunt] Kernel stack allocated at: 0x024a8000
+<4>[StackHunt] Kernel stack allocated at: 0x0c33a000
+<4>[StackHunt] Kernel stack allocated at: 0x024de000
+<4>[StackHunt] Kernel stack allocated at: 0x024e0000
+<4>[StackHunt] Kernel stack allocated at: 0x02504000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x02506000
+<4>[StackHunt] Kernel stack allocated at: 0x02468000
+<4>[StackHunt] Kernel stack allocated at: 0x0246c000
+<4>[StackHunt] Kernel stack allocated at: 0x0246e000
+<4>[StackHunt] Kernel stack allocated at: 0x02516000
+<4>[StackHunt] Kernel stack allocated at: 0x02518000
+<4>[StackHunt] Kernel stack allocated at: 0x0251a000
+<4>[StackHunt] Kernel stack allocated at: 0x0251c000
+<4>[StackHunt] Kernel stack allocated at: 0x0251e000
+<4>[StackHunt] Kernel stack allocated at: 0x02520000
+<4>[StackHunt] Kernel stack allocated at: 0x02522000
+<4>[StackHunt] Kernel stack allocated at: 0x02534000
+<4>[StackHunt] Kernel stack allocated at: 0x02536000
+<4>[StackHunt] Kernel stack allocated at: 0x02538000
+<4>[StackHunt] Kernel stack allocated at: 0x0253a000
+<4>[StackHunt] Kernel stack allocated at: 0x0254a000
+<4>[StackHunt] Kernel stack allocated at: 0x02548000
+<4>[StackHunt] Kernel stack allocated at: 0x02558000
+<4>[StackHunt] Kernel stack allocated at: 0x0255a000
+<4>[StackHunt] Kernel stack allocated at: 0x0255a000
+<4>[StackHunt] Kernel stack allocated at: 0x0255c000
+<4>[StackHunt] Kernel stack allocated at: 0x0255e000
+<4>[StackHunt] Kernel stack allocated at: 0x024c0000
+<4>[StackHunt] Kernel stack allocated at: 0x0b730000
+<4>[StackHunt] Kernel stack allocated at: 0x0270c000
+<4>[StackHunt] Kernel stack allocated at: 0x0270e000
+<4>[StackHunt] Kernel stack allocated at: 0x02710000
+<4>[StackHunt] Kernel stack allocated at: 0x02712000
+<4>[StackHunt] Kernel stack allocated at: 0x02714000
+<4>[StackHunt] Kernel stack allocated at: 0x0255a000
+<4>[StackHunt] Kernel stack allocated at: 0x02716000
+<4>[StackHunt] Kernel stack allocated at: 0x02538000
+<4>[StackHunt] Kernel stack allocated at: 0x0270a000
+<4>[StackHunt] Kernel stack allocated at: 0x02680000
+<4>[StackHunt] Kernel stack allocated at: 0x02604000
+<4>[StackHunt] Kernel stack allocated at: 0x02606000
+<4>[StackHunt] Kernel stack allocated at: 0x02690000
+<4>[StackHunt] Kernel stack allocated at: 0x02692000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x02504000
+<4>[StackHunt] Kernel stack allocated at: 0x02506000
+<4>[StackHunt] Kernel stack allocated at: 0x02694000
+<4>[StackHunt] Kernel stack allocated at: 0x02696000
+<4>[StackHunt] Kernel stack allocated at: 0x02714000
+<4>[StackHunt] Kernel stack allocated at: 0x02796000
+<4>[StackHunt] Kernel stack allocated at: 0x0b66c000
+<4>[StackHunt] Kernel stack allocated at: 0x02798000
+<4>[StackHunt] Kernel stack allocated at: 0x0279a000
+<4>[StackHunt] Kernel stack allocated at: 0x02670000
+<4>[StackHunt] Kernel stack allocated at: 0x00c38000
+<4>[StackHunt] Kernel stack allocated at: 0x00c74000
+<4>[StackHunt] Kernel stack allocated at: 0x00d1a000
+<4>[StackHunt] Kernel stack allocated at: 0x00dce000
+<4>[StackHunt] Kernel stack allocated at: 0x00e10000
+<4>[StackHunt] Kernel stack allocated at: 0x00e22000
+<4>[StackHunt] Kernel stack allocated at: 0x00e24000
+<4>[StackHunt] Kernel stack allocated at: 0x00e26000
+<4>[StackHunt] Kernel stack allocated at: 0x00e36000
+<4>[StackHunt] Kernel stack allocated at: 0x00e38000
+<4>[StackHunt] Kernel stack allocated at: 0x00a90000
+<4>[StackHunt] Kernel stack allocated at: 0x0c408000
+<4>[StackHunt] Kernel stack allocated at: 0x0c410000
+<4>[StackHunt] Kernel stack allocated at: 0x00e38000
+<4>[StackHunt] Kernel stack allocated at: 0x00e4a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c73c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c734000
+<4>[StackHunt] Kernel stack allocated at: 0x0b138000
+<4>[StackHunt] Kernel stack allocated at: 0x0a7f8000
+<4>[StackHunt] Kernel stack allocated at: 0x09980000
+<4>[StackHunt] Kernel stack allocated at: 0x09234000
+<4>[StackHunt] Kernel stack allocated at: 0x086a8000
+<4>[StackHunt] Kernel stack allocated at: 0x086d4000
+<4>[StackHunt] Kernel stack allocated at: 0x08690000
+<4>[StackHunt] Kernel stack allocated at: 0x0806c000
+<4>[StackHunt] Kernel stack allocated at: 0x00c2a000
+<4>[StackHunt] Kernel stack allocated at: 0x00c2c000
+<4>[StackHunt] Kernel stack allocated at: 0x08100000
+<4>[StackHunt] Kernel stack allocated at: 0x083e0000
+<4>[StackHunt] Kernel stack allocated at: 0x083d0000
+<4>[StackHunt] Kernel stack allocated at: 0x083d4000
+<4>[StackHunt] Kernel stack allocated at: 0x07dc0000
+<4>[StackHunt] Kernel stack allocated at: 0x07dc8000
+<4>[StackHunt] Kernel stack allocated at: 0x07dd0000
+<4>[StackHunt] Kernel stack allocated at: 0x07db0000
+<4>[StackHunt] Kernel stack allocated at: 0x07670000
+<4>select 432 (ndroid.settings), adj 11, size 4458, to kill
+<4>send sigkill to 432 (ndroid.settings), adj 11, size 4458
+<4>[StackHunt] Kernel stack allocated at: 0x04d78000
+<4>[StackHunt] Kernel stack allocated at: 0x04d80000
+<4>[StackHunt] Kernel stack allocated at: 0x04db4000
+<4>[StackHunt] Kernel stack allocated at: 0x04840000
+<4>[StackHunt] Kernel stack allocated at: 0x04844000
+<4>[StackHunt] Kernel stack allocated at: 0x04846000
+<4>[StackHunt] Kernel stack allocated at: 0x04842000
+<4>[StackHunt] Kernel stack allocated at: 0x04268000
+<4>[StackHunt] Kernel stack allocated at: 0x04090000
+<4>[StackHunt] Kernel stack allocated at: 0x03e28000
+<4>[StackHunt] Kernel stack allocated at: 0x03e2c000
+<4>[StackHunt] Kernel stack allocated at: 0x03e2e000
+<4>select 519 (droid.deskclock), adj 9, size 4143, to kill
+<4>send sigkill to 519 (droid.deskclock), adj 9, size 4143
+<4>[StackHunt] Kernel stack allocated at: 0x011b0000
+<4>[StackHunt] Kernel stack allocated at: 0x01e30000
+<4>[StackHunt] Kernel stack allocated at: 0x01e10000
+<3>init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+<4>[StackHunt] Kernel stack allocated at: 0x0b442000
+<4>[StackHunt] Kernel stack allocated at: 0x0c39a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c38a000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3ec000
+<4>[StackHunt] Kernel stack allocated at: 0x0b41c000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3e4000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3ec000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3e6000
+<4>[StackHunt] Kernel stack allocated at: 0x03200000
+<4>[StackHunt] Kernel stack allocated at: 0x03202000
+<4>[StackHunt] Kernel stack allocated at: 0x03204000
+<4>[StackHunt] Kernel stack allocated at: 0x03206000
+<4>[StackHunt] Kernel stack allocated at: 0x03208000
+<4>[StackHunt] Kernel stack allocated at: 0x0320a000
+<4>[StackHunt] Kernel stack allocated at: 0x0320c000
+<4>[StackHunt] Kernel stack allocated at: 0x031c8000
+<4>[StackHunt] Kernel stack allocated at: 0x031ca000
+<4>[StackHunt] Kernel stack allocated at: 0x031cc000
+<4>[StackHunt] Kernel stack allocated at: 0x031ce000
+<4>[StackHunt] Kernel stack allocated at: 0x03070000
+<4>[StackHunt] Kernel stack allocated at: 0x031ce000
+<4>[StackHunt] Kernel stack allocated at: 0x0c3e6000
+<4>[StackHunt] Kernel stack allocated at: 0x03394000
+<4>[StackHunt] Kernel stack allocated at: 0x03396000
+<4>[StackHunt] Kernel stack allocated at: 0x03398000
+<4>[StackHunt] Kernel stack allocated at: 0x0339a000
+<4>[StackHunt] Kernel stack allocated at: 0x0339c000
+<4>[StackHunt] Kernel stack allocated at: 0x0339e000
+<4>[StackHunt] Kernel stack allocated at: 0x031d0000
+<4>[StackHunt] Kernel stack allocated at: 0x031d2000
+<4>[StackHunt] Kernel stack allocated at: 0x03064000
+<4>[StackHunt] Kernel stack allocated at: 0x03066000
+<4>[StackHunt] Kernel stack allocated at: 0x03068000
+<4>[StackHunt] Kernel stack allocated at: 0x0306a000
+<4>[StackHunt] Kernel stack allocated at: 0x0306c000
+<4>[StackHunt] Kernel stack allocated at: 0x0306e000
+<4>[StackHunt] Kernel stack allocated at: 0x03220000
+<4>[StackHunt] Kernel stack allocated at: 0x03230000
+<4>[StackHunt] Kernel stack allocated at: 0x03232000
+<4>[StackHunt] Kernel stack allocated at: 0x03234000
+<4>[StackHunt] Kernel stack allocated at: 0x03236000
+<4>[StackHunt] Kernel stack allocated at: 0x03238000
+<4>[StackHunt] Kernel stack allocated at: 0x0306e000
+<4>[StackHunt] Kernel stack allocated at: 0x0323a000
+<4>[StackHunt] Kernel stack allocated at: 0x0323c000
+<4>[StackHunt] Kernel stack allocated at: 0x0323e000
+<4>[StackHunt] Kernel stack allocated at: 0x033a4000
+<4>[StackHunt] Kernel stack allocated at: 0x033b6000
+<4>[StackHunt] Kernel stack allocated at: 0x0323c000

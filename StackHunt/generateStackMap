@@ -1,0 +1,124 @@
+#!/bin/bash
+
+read -d '' help <<-EOF
+
+Generate Stack Map Utility, by Tomer Godinger, October 2013
+Creates a map of addresses and sizes of all active kernel stacks in the
+currently running emulator.
+
+Usage: generateStackMap [OPTION]
+
+Options:
+  -h, -?               Print this information
+  -r REGEX             Only process lines that match this regular expression
+  -k KERNEL_STACK_SIZE Size of a kernel stack (==THREAD_SIZE in the kernel code)
+  -o OUTPUT_FILE       Write the output to this file
+  -s                   Sort the results by stack address
+  -a ADB_PATH          Path to the ADB utility
+  -i INPUT_FILE        Use given dmesg file rather than using ADB
+  -p                   Keep intermediary files
+  
+Report bugs to whomever is in charge nowadays.
+EOF
+
+# A POSIX variable
+OPTIND=1         # Reset in case getopts has been used previously in the shell.
+
+# Default option values
+output_file="KernelStacks.map"
+adb_path=adb
+regex='\[StackHunt\]'
+kernel_stack_size=8192
+sort=false
+keep_intermediaries=false
+use_input_file=false
+
+# Constants
+TEMP_INPUT=.generateStackMap_dmesg
+ISNUMERIC_REGEX='^[0-9]+$'
+TEMP_UNSORTED=.generateStackMap_unsorted
+
+# Parse command line arguments
+while getopts "h?o:a:r:k:i:sp" opt; do
+    case "$opt" in
+    h|\?)
+        echo "$help"
+        exit 0
+        ;;
+    o)  output_file=$OPTARG
+        ;;
+    a)  adb_path=$OPTARG
+        ;;
+    r)  regex=$OPTARG
+        ;;
+    k)  kernel_stack_size=$OPTARG
+        ;;
+    i)  input_file=$OPTARG
+        use_input_file=true
+        ;;
+    s)  sort=true
+        ;;
+    p)  keep_intermediaries=true
+        ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+[ "$1" = "--" ] && shift
+
+# If not requested to use an input file instead of ADB, use ADB to
+# genereate the input file
+if [ ! $input_file ]
+then
+  $adb_path shell dmesg | grep "$regex" > $TEMP_INPUT
+  input_file=$TEMP_INPUT
+fi
+
+# If requested to sort, clear the temp file we're going to use for it
+if [ $sort ]; then
+  > $TEMP_UNSORTED
+fi
+
+# Generate the main file
+> $output_file
+counter=1
+while read line; do
+  # Only process lines of allocation, and not of deallocation (i.e. with "freed")
+  if echo $line | grep -q 'allocated'; then
+    # Extract the PID of the process for which the stack was allocated
+    pid=`echo $line | sed 's/.*process \([0-9]*\).*/\1/'`
+    pid=${pid/$'\n'/}
+    pid=${pid/$'\r'/}
+    if [[ $pid =~ $ISNUMERIC_REGEX ]] ; then
+      if ! tail -n+$((counter + 1)) $input_file | grep -q -m 1 "Process $pid freed"; then
+        addr=`echo $line | sed 's/.*0x\([0-9a-fA-F]*\).*/\1/'`
+        if $sort ; then
+          echo `printf %d "0x$addr"` kernel_stack_of_process_$pid $addr $kernel_stack_size >> $TEMP_UNSORTED
+        else
+          echo kernel_stack_of_process_$pid $addr $kernel_stack_size >> $output_file
+        fi
+      fi
+    fi
+  fi
+  counter=$((counter + 1))
+done < $input_file
+
+# Sort the file by address, if requested (we've already added an extra
+# column for the sorting if so)
+if $sort ; then
+  sort -n $TEMP_UNSORTED | cut -f2,3,4 -d ' ' > $output_file
+fi
+
+# Remove intermediary files, unless specifically asked not to
+if ! $keep_intermediaries && ! $use_input_file
+then
+  echo Deleting temp input file
+  echo keep = $keep_intermediaries
+  echo use = $use_input_file
+  rm $TEMP_INPUT
+fi
+if ! $keep_intermediaries && $sort
+then
+  rm $TEMP_UNSORTED
+fi

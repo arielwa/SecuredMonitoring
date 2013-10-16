@@ -1,0 +1,1138 @@
+affs: passed flags ""
+<4>yaffs: Attempting MTD mount on 31.2, "mtdblock2"
+<4>yaffs_read_super: isCheckpointed 0
+<4>[StackHunt] Process 21 allocated stack at: 0x0c2fa000
+<4>[StackHunt] Process 20 allocated stack at: 0x0c312000
+<4>[StackHunt] Process 19 allocated stack at: 0x0c318000
+<4>[StackHunt] Process 18 allocated stack at: 0x0c31a000
+<4>[StackHunt] Process 17 allocated stack at: 0x0c324000
+<4>[StackHunt] Process 16 allocated stack at: 0x0c33a000
+<4>[StackHunt] Process 15 allocated stack at: 0x0c340000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c342000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c34c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c360000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c362000
+<3>init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<4>[StackHunt] Process 0 allocated stack at: 0x0c36c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c382000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c388000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c38a000
+<4>[StackHunt] Process 45 freed its stack at: 0x0c38a000
+<4>[StackHunt] Process 45 allocated stack at: 0x0c38a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3a2000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c390000
+<4>[StackHunt] Process 44 freed its stack at: 0x0c388000
+<4>[StackHunt] Process 33 freed its stack at: 0x0c318000
+<4>[StackHunt] Process 33 allocated stack at: 0x0c388000
+<4>[StackHunt] Process 44 allocated stack at: 0x0c392000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3c6000
+<6>eth0: link up
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3c8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3ca000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3e4000
+<4>[StackHunt] Process 49 freed its stack at: 0x0c388000
+<4>[StackHunt] Process 49 allocated stack at: 0x0c3fa000
+<4>[StackHunt] Process 51 freed its stack at: 0x0c3c6000
+<4>[StackHunt] Process 51 allocated stack at: 0x0c3f8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3c6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3cc000
+<4>[StackHunt] Process 54 freed its stack at: 0x0c3e4000
+<4>[StackHunt] Process 55 freed its stack at: 0x0c3fa000
+<4>[StackHunt] Process 55 allocated stack at: 0x0c3fa000
+<4>[StackHunt] Process 54 allocated stack at: 0x0b404000
+<4>[StackHunt] Process 53 freed its stack at: 0x0c3ca000
+<4>[StackHunt] Process 53 allocated stack at: 0x0c3ca000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 57 freed its stack at: 0x0c3c6000
+<4>[StackHunt] Process 58 freed its stack at: 0x0c3cc000
+<4>[StackHunt] Process 56 freed its stack at: 0x0c3f8000
+<4>[StackHunt] Process 56 allocated stack at: 0x0c3f8000
+<4>[StackHunt] Process 58 allocated stack at: 0x0c3cc000
+<4>[StackHunt] Process 62 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 62 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 59 freed its stack at: 0x0c3fa000
+<4>[StackHunt] Process 61 freed its stack at: 0x0c3ca000
+<4>[StackHunt] Process 61 allocated stack at: 0x0c3ca000
+<4>[StackHunt] Process 59 allocated stack at: 0x0c3fa000
+<4>[StackHunt] Process 65 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 64 freed its stack at: 0x0c3cc000
+<4>[StackHunt] Process 64 allocated stack at: 0x0c3cc000
+<4>[StackHunt] Process 65 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 57 allocated stack at: 0x0c3e0000
+<4>[StackHunt] Process 67 freed its stack at: 0x0c3fa000
+<4>[StackHunt] Process 66 freed its stack at: 0x0c3ca000
+<4>[StackHunt] Process 46 freed its stack at: 0x0c38a000
+<4>[StackHunt] Process 46 allocated stack at: 0x0c38a000
+<4>[StackHunt] Process 66 allocated stack at: 0x0c3ca000
+<4>[StackHunt] Process 67 allocated stack at: 0x0c3fa000
+<4>[StackHunt] Process 69 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 69 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 71 freed its stack at: 0x0c38a000
+<4>[StackHunt] Process 71 allocated stack at: 0x0c38a000
+<4>[StackHunt] Process 74 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 74 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 75 freed its stack at: 0x0c38a000
+<4>[StackHunt] Process 75 allocated stack at: 0x0c38a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3e2000
+<6>warning: `rild' uses 32-bit capabilities (legacy support in use)
+<4>[StackHunt] Process 0 allocated stack at: 0x0b40e000
+<4>[StackHunt] Process 76 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 76 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0c3b6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b410000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b412000
+<4>[StackHunt] Process 78 freed its stack at: 0x0c3e2000
+<4>[StackHunt] Process 78 allocated stack at: 0x0c3e2000
+<4>[StackHunt] Process 81 freed its stack at: 0x0c3b4000
+<4>[StackHunt] Process 81 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 85 freed its stack at: 0x0c3e2000
+<4>[StackHunt] Process 85 allocated stack at: 0x0c3e2000
+<4>[StackHunt] Process 86 freed its stack at: 0x0c3b4000
+<4>[StackHunt] Process 86 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 87 freed its stack at: 0x0c3e2000
+<4>[StackHunt] Process 87 allocated stack at: 0x0c3e2000
+<4>[StackHunt] Process 88 freed its stack at: 0x0c3b4000
+<4>[StackHunt] Process 88 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b414000
+<4>[StackHunt] Process 89 freed its stack at: 0x0c3e2000
+<4>[StackHunt] Process 90 freed its stack at: 0x0c3b4000
+<4>[StackHunt] Process 90 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 91 freed its stack at: 0x0b414000
+<4>[StackHunt] Process 91 allocated stack at: 0x0b414000
+<4>[StackHunt] Process 92 freed its stack at: 0x0c3b4000
+<4>[StackHunt] Process 92 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 89 allocated stack at: 0x0b446000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b43c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b43e000
+<4>[StackHunt] Process 93 freed its stack at: 0x0b414000
+<4>[StackHunt] Process 93 allocated stack at: 0x0b414000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b448000
+<4>[StackHunt] Process 94 freed its stack at: 0x0c3b4000
+<4>[StackHunt] Process 94 allocated stack at: 0x0c3b4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 99 freed its stack at: 0x0b448000
+<4>[StackHunt] Process 99 allocated stack at: 0x0b448000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b45e000
+<4>[StackHunt] Process 101 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 101 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 102 freed its stack at: 0x0b448000
+<4>[StackHunt] Process 103 freed its stack at: 0x0b45e000
+<4>[StackHunt] Process 103 allocated stack at: 0x0b45e000
+<4>[StackHunt] Process 102 allocated stack at: 0x0b448000
+<4>[StackHunt] Process 104 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 105 freed its stack at: 0x0b45e000
+<4>[StackHunt] Process 105 allocated stack at: 0x0b45e000
+<4>[StackHunt] Process 104 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 106 freed its stack at: 0x0b448000
+<4>[StackHunt] Process 106 allocated stack at: 0x0b448000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b470000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 108 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 108 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 111 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 111 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b474000
+<4>[StackHunt] Process 112 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 112 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 113 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 114 freed its stack at: 0x0b474000
+<4>[StackHunt] Process 114 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 115 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 115 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 116 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 116 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 117 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 117 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 118 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 118 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 119 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 119 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 120 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 120 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 121 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 121 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 122 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 122 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 113 allocated stack at: 0x0b460000
+<4>[StackHunt] Process 123 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 123 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 124 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 125 freed its stack at: 0x0b460000
+<4>[StackHunt] Process 125 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 126 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 126 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 127 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 127 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 128 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 128 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 129 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 129 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 130 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 130 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 124 allocated stack at: 0x0b460000
+<4>[StackHunt] Process 131 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 132 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 132 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 131 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 133 freed its stack at: 0x0b460000
+<4>[StackHunt] Process 133 allocated stack at: 0x0b460000
+<4>[StackHunt] Process 134 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 135 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 135 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 134 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 136 freed its stack at: 0x0b460000
+<4>[StackHunt] Process 136 allocated stack at: 0x0b460000
+<4>[StackHunt] Process 137 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 137 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 138 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 139 freed its stack at: 0x0b460000
+<4>[StackHunt] Process 139 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 138 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 140 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 141 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 141 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 140 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 142 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 142 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 143 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 143 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 144 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 144 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 145 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 146 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 146 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 147 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 147 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 148 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 148 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 149 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 149 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 150 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 150 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 151 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 151 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 152 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 152 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 145 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 153 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 154 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 154 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 155 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 155 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 153 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 156 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 156 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 157 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 158 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 158 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 159 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 159 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 157 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 160 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 160 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 161 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 161 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 162 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 162 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 163 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 163 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 164 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 165 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 165 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 166 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 166 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 167 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 167 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 168 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 168 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 169 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 169 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 164 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 170 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 171 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 171 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 172 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 172 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 170 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 173 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 173 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 174 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 174 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 175 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 175 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 176 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 177 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 177 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 176 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 178 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 179 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 179 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 180 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 180 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 178 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 181 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 181 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 182 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 183 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 183 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 182 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 184 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 184 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 185 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 186 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 186 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 187 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 187 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 188 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 188 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 189 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 189 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 185 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 190 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 191 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 191 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 192 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 192 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 193 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 193 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 190 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 194 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 194 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 195 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 195 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 196 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 196 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 197 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 197 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 198 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 198 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 199 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 200 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 200 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 201 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 201 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 202 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 202 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 203 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 203 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 199 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 204 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 205 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 205 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 206 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 206 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 204 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 207 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 207 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 208 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 209 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 209 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 208 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 210 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 211 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 211 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 210 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 212 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 213 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 213 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 212 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 214 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 214 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 215 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 215 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 216 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 217 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 217 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 216 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 218 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 218 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 219 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 220 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 220 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 221 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 221 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 219 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 222 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 223 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 223 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 224 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 224 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 222 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 225 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 225 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 226 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 226 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b484000
+<4>[StackHunt] Process 227 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 227 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 228 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 229 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 229 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 230 freed its stack at: 0x0b484000
+<4>[StackHunt] Process 230 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 231 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 232 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 232 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 233 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 233 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 231 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 234 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 234 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 235 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 236 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 236 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 237 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 237 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 235 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 238 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 239 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 239 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 238 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 240 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 240 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 241 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 241 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 242 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 243 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 243 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 242 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 244 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 245 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 245 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 246 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 246 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 244 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 247 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 248 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 248 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 247 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 249 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 249 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 250 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 251 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 251 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 250 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 252 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 253 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 253 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 254 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 254 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 255 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 255 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 252 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 256 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 257 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 257 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 256 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 258 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 258 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 259 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 259 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 260 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 260 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 261 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 261 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 262 freed its stack at: 0x0b472000
+<4>[StackHunt] Process 263 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 263 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 264 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 264 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 265 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 265 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 266 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 266 allocated stack at: 0x0b44a000
+<4>[StackHunt] Process 267 freed its stack at: 0x0b482000
+<4>[StackHunt] Process 267 allocated stack at: 0x0b482000
+<4>[StackHunt] Process 262 allocated stack at: 0x0b472000
+<4>[StackHunt] Process 228 allocated stack at: 0x0b474000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b476000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b484000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b486000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b498000
+<4>[StackHunt] Process 268 freed its stack at: 0x0b44a000
+<4>[StackHunt] Process 269 freed its stack at: 0x0b482000
+<7>eth0: no IPv6 routers present
+<4>[StackHunt] Process 269 allocated stack at: 0x0b492000
+<4>[StackHunt] Process 268 allocated stack at: 0x0b4b4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4b6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4b8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4ba000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4bc000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4be000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4c0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4c2000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4c4000
+<4>[StackHunt] Process 107 freed its stack at: 0x0b45e000
+<4>[StackHunt] Process 109 freed its stack at: 0x0b448000
+<4>[StackHunt] Process 110 freed its stack at: 0x0b470000
+<4>[StackHunt] Process 110 allocated stack at: 0x0b470000
+<4>[StackHunt] Process 109 allocated stack at: 0x0b448000
+<4>[StackHunt] Process 107 allocated stack at: 0x0b45e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4d6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4d8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4da000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4dc000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4de000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4e0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4f0000
+<4>[StackHunt] Process 294 freed its stack at: 0x0b4e0000
+<4>[StackHunt] Process 294 allocated stack at: 0x0b4e0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b4f2000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b504000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b506000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b508000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b50a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b50c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b520000
+<4>[StackHunt] Process 300 freed its stack at: 0x0b508000
+<4>[StackHunt] Process 301 freed its stack at: 0x0b50a000
+<4>[StackHunt] Process 301 allocated stack at: 0x0b522000
+<4>[StackHunt] Process 300 allocated stack at: 0x0b508000
+<4>[StackHunt] Process 302 freed its stack at: 0x0b50c000
+<4>[StackHunt] Process 303 freed its stack at: 0x0b520000
+<4>[StackHunt] Process 303 allocated stack at: 0x0b520000
+<4>[StackHunt] Process 302 allocated stack at: 0x0b50c000
+<4>[StackHunt] Process 304 freed its stack at: 0x0b522000
+<4>[StackHunt] Process 305 freed its stack at: 0x0b508000
+<4>[StackHunt] Process 306 freed its stack at: 0x0b520000
+<4>[StackHunt] Process 307 freed its stack at: 0x0b50c000
+<4>[StackHunt] Process 307 allocated stack at: 0x0b50c000
+<4>[StackHunt] Process 306 allocated stack at: 0x0b508000
+<4>[StackHunt] Process 305 allocated stack at: 0x0b50a000
+<4>[StackHunt] Process 304 allocated stack at: 0x0b510000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b512000
+<6>request_suspend_state: wakeup (3->0) at 19042579174 (2013-10-15 14:34:13.144460719 UTC)
+<4>[StackHunt] Process 0 allocated stack at: 0x0b520000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b522000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b524000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b526000
+<4>[StackHunt] Process 309 freed its stack at: 0x0b508000
+<4>[StackHunt] Process 309 allocated stack at: 0x0b508000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b528000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b52a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b52c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b52e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b530000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b542000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b544000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b546000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b548000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b54a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b54c000
+<4>[StackHunt] Process 323 freed its stack at: 0x0b542000
+<4>[StackHunt] Process 323 allocated stack at: 0x0b542000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b54e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b550000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b552000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b562000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b564000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b566000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b568000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b56a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b56c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b56e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b570000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b572000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b574000
+<4>[StackHunt] Process 342 freed its stack at: 0x0b574000
+<4>[StackHunt] Process 342 allocated stack at: 0x0b574000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b586000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b588000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5ac000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5ae000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5b0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5b2000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5c2000
+<4>[StackHunt] Process 277 freed its stack at: 0x0b4b4000
+<4>[StackHunt] Process 278 freed its stack at: 0x0b4b6000
+<4>[StackHunt] Process 286 freed its stack at: 0x0b470000
+<4>[StackHunt] Process 286 allocated stack at: 0x0b64a000
+<4>[StackHunt] Process 278 allocated stack at: 0x0b644000
+<4>[StackHunt] Process 277 allocated stack at: 0x0b698000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b69a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b69c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b69e000
+<4>[StackHunt] Process 351 freed its stack at: 0x0b64a000
+<4>[StackHunt] Process 351 allocated stack at: 0x0b68c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b638000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5f2000
+<4>[StackHunt] Process 352 freed its stack at: 0x0b644000
+<4>[StackHunt] Process 350 freed its stack at: 0x0b5c2000
+<4>[StackHunt] Process 350 allocated stack at: 0x0b644000
+<4>[StackHunt] Process 352 allocated stack at: 0x0b470000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b64a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b678000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b67a000
+<4>[StackHunt] Process 357 freed its stack at: 0x0b68c000
+<4>[StackHunt] Process 346 freed its stack at: 0x0b5ac000
+<4>[StackHunt] Process 348 freed its stack at: 0x0b5b0000
+<4>[StackHunt] Process 349 freed its stack at: 0x0b5b2000
+<4>[StackHunt] Process 349 allocated stack at: 0x0b5ac000
+<4>[StackHunt] Process 348 allocated stack at: 0x0b68c000
+<4>[StackHunt] Process 360 freed its stack at: 0x0b644000
+<4>[StackHunt] Process 360 allocated stack at: 0x0b644000
+<4>[StackHunt] Process 366 freed its stack at: 0x0b68c000
+<4>[StackHunt] Process 366 allocated stack at: 0x0b68c000
+<4>[StackHunt] Process 346 allocated stack at: 0x0b5fa000
+<4>[StackHunt] Process 357 allocated stack at: 0x0b64c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b64e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b660000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b662000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b664000
+<4>[StackHunt] Process 367 freed its stack at: 0x0b644000
+<4>[StackHunt] Process 367 allocated stack at: 0x0b644000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b656000
+<4>[StackHunt] Process 368 freed its stack at: 0x0b68c000
+<4>[StackHunt] Process 368 allocated stack at: 0x0b68c000
+<4>[StackHunt] Process 375 freed its stack at: 0x0b644000
+<4>[StackHunt] Process 375 allocated stack at: 0x0b644000
+<4>[StackHunt] Process 376 freed its stack at: 0x0b656000
+<4>[StackHunt] Process 376 allocated stack at: 0x0b656000
+<4>[StackHunt] Process 377 freed its stack at: 0x0b68c000
+<4>[StackHunt] Process 377 allocated stack at: 0x0b68c000
+<4>[StackHunt] Process 378 freed its stack at: 0x0b644000
+<4>[StackHunt] Process 379 freed its stack at: 0x0b656000
+<4>[StackHunt] Process 379 allocated stack at: 0x0b656000
+<4>[StackHunt] Process 378 allocated stack at: 0x0b644000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5fc000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5fe000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b658000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b65a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b65c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b62c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5d0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5d2000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5d4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5d6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5d8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5da000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6ac000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6ae000
+<4>[StackHunt] Process 362 freed its stack at: 0x0b64a000
+<4>[StackHunt] Process 364 freed its stack at: 0x0b67a000
+<4>[StackHunt] Process 365 freed its stack at: 0x0b5ac000
+<4>[StackHunt] Process 365 allocated stack at: 0x0b5ac000
+<4>[StackHunt] Process 364 allocated stack at: 0x0b67a000
+<4>[StackHunt] Process 362 allocated stack at: 0x0b64a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6b0000
+<4>[StackHunt] Process 18812 allocated stack at: 0x0b6b2000
+<4>[StackHunt] Process 18556 allocated stack at: 0x0b6b4000
+<4>[StackHunt] Process 399 freed its stack at: 0x0b64a000
+<4>[StackHunt] Process 399 allocated stack at: 0x0b64a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6b6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b606000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b608000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b60a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6ce000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6d0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6d2000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6d4000
+<4>[StackHunt] Process 389 freed its stack at: 0x0b5d0000
+<4>[StackHunt] Process 391 freed its stack at: 0x0b5d4000
+<4>[StackHunt] Process 392 freed its stack at: 0x0b5d6000
+<4>[StackHunt] Process 392 allocated stack at: 0x0b5d0000
+<4>[StackHunt] Process 391 allocated stack at: 0x0b6d6000
+<4>[StackHunt] Process 389 allocated stack at: 0x0b5d4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b5d6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6e8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b6ea000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b70e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b710000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b712000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b722000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b724000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b726000
+<4>[StackHunt] Process 408 freed its stack at: 0x0b6ce000
+<4>[StackHunt] Process 410 freed its stack at: 0x0b6d2000
+<4>[StackHunt] Process 411 freed its stack at: 0x0b6d4000
+<4>[StackHunt] Process 411 allocated stack at: 0x0b6d4000
+<4>[StackHunt] Process 410 allocated stack at: 0x0b6d2000
+<4>[StackHunt] Process 408 allocated stack at: 0x0b6ce000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b728000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b72a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b73c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b73e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b740000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b742000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b744000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b746000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b756000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b758000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b75a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b75c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b75e000
+<4>[StackHunt] Process 436 freed its stack at: 0x0b758000
+<4>[StackHunt] Process 436 allocated stack at: 0x0b758000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b760000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b762000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b786000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b798000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b79a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b79c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b79e000
+<4>[StackHunt] Process 418 freed its stack at: 0x0b70e000
+<4>[StackHunt] Process 422 freed its stack at: 0x0b724000
+<4>[StackHunt] Process 423 freed its stack at: 0x0b726000
+<4>[StackHunt] Process 423 allocated stack at: 0x0b70e000
+<4>[StackHunt] Process 429 freed its stack at: 0x0b73c000
+<4>[StackHunt] Process 429 allocated stack at: 0x0b73c000
+<4>[StackHunt] Process 422 allocated stack at: 0x0b724000
+<4>[StackHunt] Process 418 allocated stack at: 0x0b726000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7ae000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7b0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7b6000
+<4>[StackHunt] Process 451 freed its stack at: 0x0b726000
+<4>[StackHunt] Process 451 allocated stack at: 0x0b7c6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7c8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7ca000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7cc000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7ce000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7de000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7e0000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7e2000
+<4>[StackHunt] Process 460 freed its stack at: 0x0b7de000
+<4>[StackHunt] Process 460 allocated stack at: 0x0b7de000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7e4000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7e6000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7e8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7fa000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7fc000
+<4>[StackHunt] Process 0 allocated stack at: 0x0b7fe000
+<4>[StackHunt] Process 466 freed its stack at: 0x0b7e8000
+<4>[StackHunt] Process 466 allocated stack at: 0x0b7e8000
+<4>[StackHunt] Process 0 allocated stack at: 0x02022000
+<4>[StackHunt] Process 465 freed its stack at: 0x0b7e6000
+<4>[StackHunt] Process 465 allocated stack at: 0x0b7e6000
+<4>[StackHunt] Process 0 allocated stack at: 0x02024000
+<4>[StackHunt] Process 0 allocated stack at: 0x02026000
+<4>[StackHunt] Process 443 freed its stack at: 0x0b786000
+<4>[StackHunt] Process 446 freed its stack at: 0x0b79c000
+<4>[StackHunt] Process 447 freed its stack at: 0x0b79e000
+<4>[StackHunt] Process 447 allocated stack at: 0x0b786000
+<4>[StackHunt] Process 446 allocated stack at: 0x0b79c000
+<4>[StackHunt] Process 467 freed its stack at: 0x0b7fa000
+<4>[StackHunt] Process 463 freed its stack at: 0x0b7de000
+<4>[StackHunt] Process 463 allocated stack at: 0x0b7de000
+<4>[StackHunt] Process 467 allocated stack at: 0x02032000
+<4>[StackHunt] Process 443 allocated stack at: 0x02034000
+<4>[StackHunt] Process -881197576 allocated stack at: 0x02036000
+<4>[StackHunt] Process 0 allocated stack at: 0x02038000
+<4>[StackHunt] Process 0 allocated stack at: 0x0203a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0203c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0204e000
+<4>[StackHunt] Process 0 allocated stack at: 0x02072000
+<4>[StackHunt] Process 0 allocated stack at: 0x02074000
+<4>[StackHunt] Process 0 allocated stack at: 0x02076000
+<4>[StackHunt] Process 0 allocated stack at: 0x02078000
+<4>[StackHunt] Process 471 freed its stack at: 0x02022000
+<4>[StackHunt] Process 473 freed its stack at: 0x02024000
+<4>[StackHunt] Process 474 freed its stack at: 0x02026000
+<4>[StackHunt] Process 474 allocated stack at: 0x02022000
+<4>[StackHunt] Process 473 allocated stack at: 0x0207a000
+<4>[StackHunt] Process 471 allocated stack at: 0x02024000
+<4>[StackHunt] Process 0 allocated stack at: 0x02026000
+<4>[StackHunt] Process 0 allocated stack at: 0x0208a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0208c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0208e000
+<4>[StackHunt] Process 0 allocated stack at: 0x02090000
+<4>[StackHunt] Process 0 allocated stack at: 0x020a2000
+<4>[StackHunt] Process 0 allocated stack at: 0x020a4000
+<4>[StackHunt] Process 0 allocated stack at: 0x020a6000
+<4>[StackHunt] Process 0 allocated stack at: 0x020a8000
+<4>[StackHunt] Process 0 allocated stack at: 0x020aa000
+<4>[StackHunt] Process 0 allocated stack at: 0x020ac000
+<4>[StackHunt] Process 500 freed its stack at: 0x020a8000
+<4>[StackHunt] Process 500 allocated stack at: 0x020a8000
+<4>[StackHunt] Process 0 allocated stack at: 0x020ae000
+<4>[StackHunt] Process 502 freed its stack at: 0x020ac000
+<4>[StackHunt] Process 502 allocated stack at: 0x020ac000
+<4>[StackHunt] Process 0 allocated stack at: 0x020b0000
+<4>[StackHunt] Process 506 freed its stack at: 0x020b0000
+<4>[StackHunt] Process 506 allocated stack at: 0x020b0000
+<4>[StackHunt] Process 0 allocated stack at: 0x020c0000
+<4>[StackHunt] Process 507 freed its stack at: 0x020b0000
+<4>[StackHunt] Process 507 allocated stack at: 0x020b0000
+<4>[StackHunt] Process 0 allocated stack at: 0x020c2000
+<4>[StackHunt] Process 3014756 allocated stack at: 0x020c4000
+<4>[StackHunt] Process 510 freed its stack at: 0x020c2000
+<4>[StackHunt] Process 511 freed its stack at: 0x020c4000
+<4>[StackHunt] Process 511 allocated stack at: 0x020c2000
+<4>[StackHunt] Process 512 freed its stack at: 0x020c2000
+<4>[StackHunt] Process 512 allocated stack at: 0x020c2000
+<4>[StackHunt] Process 510 allocated stack at: 0x020c4000
+<4>[StackHunt] Process 6881391 allocated stack at: 0x020d6000
+<4>[StackHunt] Process 6553705 allocated stack at: 0x020d8000
+<4>[StackHunt] Process 6488161 allocated stack at: 0x020da000
+<4>[StackHunt] Process 0 allocated stack at: 0x020dc000
+<4>[StackHunt] Process 518 freed its stack at: 0x020dc000
+<4>[StackHunt] Process 518 allocated stack at: 0x0c328000
+<4>[StackHunt] Process 79 freed its stack at: 0x0b40e000
+<4>[StackHunt] Process 80 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 83 freed its stack at: 0x0b410000
+<4>[StackHunt] Process 36 freed its stack at: 0x0c33a000
+<4>[StackHunt] Process 36 allocated stack at: 0x0c33a000
+<4>[StackHunt] Process 381 freed its stack at: 0x0b656000
+<4>[StackHunt] Process 381 allocated stack at: 0x0b656000
+<4>[StackHunt] Process 83 allocated stack at: 0x0b410000
+<4>[StackHunt] Process 80 allocated stack at: 0x0c3ea000
+<4>[StackHunt] Process 79 allocated stack at: 0x0211a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0211c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0211e000
+<4>[StackHunt] Process 0 allocated stack at: 0x02120000
+<4>[StackHunt] Process 485 freed its stack at: 0x02072000
+<4>[StackHunt] Process 487 freed its stack at: 0x02076000
+<4>[StackHunt] Process 488 freed its stack at: 0x02078000
+<4>[StackHunt] Process 488 allocated stack at: 0x0212a000
+<4>[StackHunt] Process 487 allocated stack at: 0x0212c000
+<4>[StackHunt] Process 485 allocated stack at: 0x0212e000
+<4>[StackHunt] Process 0 allocated stack at: 0x02130000
+<4>[StackHunt] Process 0 allocated stack at: 0x02132000
+<4>[StackHunt] Process 0 allocated stack at: 0x02134000
+<4>[StackHunt] Process 1077936128 allocated stack at: 0x02136000
+<4>[StackHunt] Process 0 allocated stack at: 0x02138000
+<4>[StackHunt] Process 0 allocated stack at: 0x0213a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0214c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0214e000
+<4>[StackHunt] Process 0 allocated stack at: 0x010fc000
+<4>[StackHunt] Process 539 freed its stack at: 0x010fc000
+<4>[StackHunt] Process 516 freed its stack at: 0x020d8000
+<4>[StackHunt] Process 516 allocated stack at: 0x02280000
+<4>[StackHunt] Process 540 freed its stack at: 0x02280000
+<4>[StackHunt] Process 540 allocated stack at: 0x0217a000
+<4>[StackHunt] Process 539 allocated stack at: 0x020d8000
+<4>[StackHunt] Process 0 allocated stack at: 0x0217c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0217e000
+<4>[StackHunt] Process 542 freed its stack at: 0x020d8000
+<4>[StackHunt] Process 543 freed its stack at: 0x0217c000
+<4>[StackHunt] Process 544 freed its stack at: 0x0217e000
+<4>[StackHunt] Process 522 freed its stack at: 0x0b410000
+<4>[StackHunt] Process 522 allocated stack at: 0x0b410000
+<4>[StackHunt] Process 541 freed its stack at: 0x0217a000
+<4>[StackHunt] Process 541 allocated stack at: 0x023d0000
+<4>[StackHunt] Process 544 allocated stack at: 0x023d2000
+<4>[StackHunt] Process 543 allocated stack at: 0x023d4000
+<4>[StackHunt] Process 547 freed its stack at: 0x023d2000
+<4>[StackHunt] Process 547 allocated stack at: 0x023d6000
+<4>[StackHunt] Process 542 allocated stack at: 0x023d8000
+<4>[StackHunt] Process 0 allocated stack at: 0x013c0000
+<4>[StackHunt] Process 9 allocated stack at: 0x007c8000
+<4>[StackHunt] Process 9 allocated stack at: 0x0b364000
+<4>[StackHunt] Process 524 freed its stack at: 0x0211a000
+<4>[StackHunt] Process 526 freed its stack at: 0x0211e000
+<4>[StackHunt] Process 527 freed its stack at: 0x02120000
+<4>[StackHunt] Process 9 allocated stack at: 0x0ac80000
+<4>[StackHunt] Process 527 allocated stack at: 0x0ac68000
+<4>[StackHunt] Process 526 allocated stack at: 0x0ac6c000
+<4>[StackHunt] Process 546 freed its stack at: 0x023d0000
+<4>[StackHunt] Process 546 allocated stack at: 0x011f8000
+<4>[StackHunt] Process 9 allocated stack at: 0x0ad60000
+<4>[StackHunt] Process 524 allocated stack at: 0x0ac82000
+<4>[StackHunt] Process 0 allocated stack at: 0x0ad90000
+<4>[StackHunt] Process 0 allocated stack at: 0x0ad94000
+<4>[StackHunt] Process 655364 allocated stack at: 0x00e04000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a9e8000
+<4>[StackHunt] Process 521162160 allocated stack at: 0x0a9d0000
+<4>[StackHunt] Process 431000396 allocated stack at: 0x03380000
+<4>[StackHunt] Process 1534702576 allocated stack at: 0x03382000
+<4>[StackHunt] Process -756201342 allocated stack at: 0x04288000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0428a000
+<4>[StackHunt] Process 567 freed its stack at: 0x04288000
+<4>[StackHunt] Process 567 allocated stack at: 0x04288000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0415a000
+<4>[StackHunt] Process 568 freed its stack at: 0x0428a000
+<4>[StackHunt] Process 568 allocated stack at: 0x0428a000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x04296000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x04298000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0429a000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0429c000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0429e000
+<4>[StackHunt] Process 554 freed its stack at: 0x0ac80000
+<4>[StackHunt] Process 555 freed its stack at: 0x0ac68000
+<4>[StackHunt] Process 556 freed its stack at: 0x0ac6c000
+<4>[StackHunt] Process 556 allocated stack at: 0x04320000
+<4>[StackHunt] Process 555 allocated stack at: 0x04322000
+<4>[StackHunt] Process 554 allocated stack at: 0x04324000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x04326000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x04328000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0432a000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x0432c000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x03200000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x03202000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x088e8000
+<4>[StackHunt] Process 577 freed its stack at: 0x04320000
+<4>[StackHunt] Process 577 allocated stack at: 0x04320000
+<4>[StackHunt] Process 572 freed its stack at: 0x04296000
+<4>[StackHunt] Process 575 freed its stack at: 0x0429c000
+<4>[StackHunt] Process 576 freed its stack at: 0x0429e000
+<4>[StackHunt] Process 576 allocated stack at: 0x086b0000
+<4>[StackHunt] Process 575 allocated stack at: 0x0869c000
+<4>[StackHunt] Process 572 allocated stack at: 0x08694000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x08684000
+<4>[StackHunt] Process 1879048192 allocated stack at: 0x080ae000
+<4>[StackHunt] Process 32160 allocated stack at: 0x080f2000
+<4>[StackHunt] Process 6107 allocated stack at: 0x081d0000
+<4>[StackHunt] Process 32074 allocated stack at: 0x083f0000
+<4>[StackHunt] Process 32010 allocated stack at: 0x07c54000
+<4>[StackHunt] Process 4013 allocated stack at: 0x07d28000
+<4>[StackHunt] Process 3950 allocated stack at: 0x07c94000
+<4>[StackHunt] Process 413 freed its stack at: 0x0b6d6000
+<4>[StackHunt] Process 413 allocated stack at: 0x0b6d6000
+<4>[StackHunt] Process 3888 allocated stack at: 0x07830000
+<4>[StackHunt] Process 432 freed its stack at: 0x0b742000
+<4>[StackHunt] Process 551 freed its stack at: 0x013c0000
+<4>[StackHunt] Process 551 allocated stack at: 0x0b742000
+<4>[StackHunt] Process 432 allocated stack at: 0x06568000
+<4>[StackHunt] Process 594 freed its stack at: 0x081d0000
+<4>[StackHunt] Process 594 allocated stack at: 0x058e0000
+<4>select 442 (ndroid.settings), adj 11, size 4458, to kill
+<4>send sigkill to 442 (ndroid.settings), adj 11, size 4458
+<4>[StackHunt] Process 461 freed its stack at: 0x0b7e0000
+<4>[StackHunt] Process 445 freed its stack at: 0x0b79a000
+<4>[StackHunt] Process 448 freed its stack at: 0x0b70e000
+<4>[StackHunt] Process 449 freed its stack at: 0x0b73c000
+<4>[StackHunt] Process 450 freed its stack at: 0x0b724000
+<4>[StackHunt] Process 452 freed its stack at: 0x0b7ae000
+<4>[StackHunt] Process 453 freed its stack at: 0x0b7b0000
+<4>[StackHunt] Process 454 freed its stack at: 0x0b7b6000
+<4>[StackHunt] Process 455 freed its stack at: 0x0b7c6000
+<4>[StackHunt] Process 456 freed its stack at: 0x0b7c8000
+<4>[StackHunt] Process 442 freed its stack at: 0x0b762000
+<4>[StackHunt] Process 442 allocated stack at: 0x03450000
+<4>[StackHunt] Process 456 allocated stack at: 0x0344c000
+<4>[StackHunt] Process 455 allocated stack at: 0x03440000
+<4>[StackHunt] Process 454 allocated stack at: 0x03b40000
+<4>[StackHunt] Process 453 allocated stack at: 0x03b42000
+<4>[StackHunt] Process 588 freed its stack at: 0x086b0000
+<4>[StackHunt] Process 590 freed its stack at: 0x08694000
+<4>[StackHunt] Process 591 freed its stack at: 0x08684000
+<4>[StackHunt] Process 591 allocated stack at: 0x02fc0000
+<4>[StackHunt] Process 590 allocated stack at: 0x02fc2000
+<4>[StackHunt] Process 588 allocated stack at: 0x02fae000
+<4>[StackHunt] Process 452 allocated stack at: 0x02f76000
+<4>[StackHunt] Process 450 allocated stack at: 0x02f80000
+<4>[StackHunt] Process 449 allocated stack at: 0x02458000
+<4>[StackHunt] Process 448 allocated stack at: 0x02518000
+<4>[StackHunt] Process 445 allocated stack at: 0x025de000
+<4>[StackHunt] Process 461 allocated stack at: 0x02390000
+<4>select 523 (droid.deskclock), adj 9, size 4144, to kill
+<4>send sigkill to 523 (droid.deskclock), adj 9, size 4144
+<4>[StackHunt] Process 538 freed its stack at: 0x0214e000
+<4>[StackHunt] Process 525 freed its stack at: 0x0211c000
+<4>[StackHunt] Process 528 freed its stack at: 0x0212a000
+<4>[StackHunt] Process 529 freed its stack at: 0x0212c000
+<4>[StackHunt] Process 530 freed its stack at: 0x0212e000
+<4>[StackHunt] Process 531 freed its stack at: 0x02130000
+<4>[StackHunt] Process 532 freed its stack at: 0x02132000
+<4>[StackHunt] Process 533 freed its stack at: 0x02134000
+<4>[StackHunt] Process 537 freed its stack at: 0x0214c000
+<4>[StackHunt] Process 523 freed its stack at: 0x0c3ea000
+<4>[StackHunt] Process 617 freed its stack at: 0x02390000
+<4>[StackHunt] Process 617 allocated stack at: 0x06b38000
+<4>[StackHunt] Process 523 allocated stack at: 0x09c48000
+<4>[StackHunt] Process 537 allocated stack at: 0x09c4c000
+<3>init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+<4>[StackHunt] Process 533 allocated stack at: 0x0c3ec000
+<4>[StackHunt] Process 82 freed its stack at: 0x0c3b6000
+<4>[StackHunt] Process 84 freed its stack at: 0x0b412000
+<4>[StackHunt] Process 73 freed its stack at: 0x0c3fa000
+<4>[StackHunt] Process 73 allocated stack at: 0x0c3fa000
+<4>[StackHunt] Process 84 allocated stack at: 0x0b412000
+<4>[StackHunt] Process 619 freed its stack at: 0x09c48000
+<4>[StackHunt] Process 619 allocated stack at: 0x0c3b6000
+<4>[StackHunt] Process 82 allocated stack at: 0x0b418000
+<4>[StackHunt] Process 532 allocated stack at: 0x0c3ee000
+<4>[StackHunt] Process 531 allocated stack at: 0x0a700000
+<4>[StackHunt] Process 530 allocated stack at: 0x0a702000
+<4>[StackHunt] Process 529 allocated stack at: 0x0a6d6000
+<4>[StackHunt] Process 627 freed its stack at: 0x0a700000
+<4>[StackHunt] Process 626 freed its stack at: 0x0c3ee000
+<4>[StackHunt] Process 626 allocated stack at: 0x0a654000
+<4>[StackHunt] Process 627 allocated stack at: 0x0a704000
+<4>[StackHunt] Process 528 allocated stack at: 0x0a706000
+<4>[StackHunt] Process 525 allocated stack at: 0x0a650000
+<4>[StackHunt] Process 629 freed its stack at: 0x0a6d6000
+<4>[StackHunt] Process 625 freed its stack at: 0x0b418000
+<4>[StackHunt] Process 625 allocated stack at: 0x0b418000
+<4>[StackHunt] Process 629 allocated stack at: 0x0a6d6000
+<4>[StackHunt] Process 630 freed its stack at: 0x0a654000
+<4>[StackHunt] Process 628 freed its stack at: 0x0a702000
+<4>[StackHunt] Process 628 allocated stack at: 0x0a702000
+<4>[StackHunt] Process 635 freed its stack at: 0x0a6d6000
+<4>[StackHunt] Process 636 freed its stack at: 0x0a702000
+<4>[StackHunt] Process 636 allocated stack at: 0x0a702000
+<4>[StackHunt] Process 635 allocated stack at: 0x0a6d6000
+<4>[StackHunt] Process 630 allocated stack at: 0x0a654000
+<4>[StackHunt] Process 538 allocated stack at: 0x0a652000
+<4>[StackHunt] Process 3827 allocated stack at: 0x0a71e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a640000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a642000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a644000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a646000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a648000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a64a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a64c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a64e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a510000
+<4>[StackHunt] Process 639 freed its stack at: 0x0a654000
+<4>[StackHunt] Process 605 freed its stack at: 0x0344c000
+<4>[StackHunt] Process 607 freed its stack at: 0x03b40000
+<4>[StackHunt] Process 609 freed its stack at: 0x02fc0000
+<4>[StackHunt] Process 609 allocated stack at: 0x0a654000
+<4>[StackHunt] Process 607 allocated stack at: 0x0a722000
+<4>[StackHunt] Process 605 allocated stack at: 0x0a724000
+<4>[StackHunt] Process 639 allocated stack at: 0x0a726000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a728000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a72a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a72c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a72e000
+<4>[StackHunt] Process 653 freed its stack at: 0x0a724000
+<4>[StackHunt] Process 653 allocated stack at: 0x0a724000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a730000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a732000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a734000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a6e4000
+<4>[StackHunt] Process 660 freed its stack at: 0x0a730000
+<4>[StackHunt] Process 660 allocated stack at: 0x0a730000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a6e6000
+<4>[StackHunt] Process 657 freed its stack at: 0x0a72c000
+<4>[StackHunt] Process 573 freed its stack at: 0x04298000
+<4>[StackHunt] Process 573 allocated stack at: 0x04298000
+<4>[StackHunt] Process 657 allocated stack at: 0x0a72c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a52a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a52c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a52e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a530000
+<4>[StackHunt] Process 661 freed its stack at: 0x0a732000
+<4>[StackHunt] Process 661 allocated stack at: 0x0a732000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a532000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a534000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a536000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a538000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a53a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a74c000
+<4>[StackHunt] Process 641 freed its stack at: 0x0a71e000
+<4>[StackHunt] Process 643 freed its stack at: 0x0a642000
+<4>[StackHunt] Process 644 freed its stack at: 0x0a644000
+<4>[StackHunt] Process 644 allocated stack at: 0x0a644000
+<4>[StackHunt] Process 643 allocated stack at: 0x0a642000
+<4>[StackHunt] Process 641 allocated stack at: 0x0a71e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a74e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a750000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a760000
+<4>[StackHunt] Process 683 freed its stack at: 0x0a750000
+<4>[StackHunt] Process 683 allocated stack at: 0x0a750000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a762000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a606000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a608000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a60a000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a60c000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a61e000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a620000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a622000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a624000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a626000
+<4>[StackHunt] Process 0 allocated stack at: 0x0a628000
+<4>[StackHunt] Process 668 freed its stack at: 0x0a52a000
+<4>[StackHunt] Process 671 freed its stack at: 0x0a530000
+<4>[StackHunt] Process 675 freed its stack at: 0x0a536000
+<4>[StackHunt] Process 685 freed its stack at: 0x0a750000
+<4>[StackHunt] Process 685 allocated stack at: 0x0a750000
+<4>[StackHunt] Process 675 allocated stack at: 0x0a580000
+<4>select 667 (droid.deskclock), adj 9, size 4574, to kill
+<4>send sigkill to 667 (droid.deskclock), adj 9, size 4574
+<4>[StackHunt] Process 671 allocated stack at: 0x0a7c2000
+<4>[StackHunt] Process 684 freed its stack at: 0x0a760000
+<4>[StackHunt] Process 670 freed its stack at: 0x0a52e000
+<4>[StackHunt] Process 672 freed its stack at: 0x0a732000
+<4>[StackHunt] Process 673 freed its stack at: 0x0a532000
+<4>[StackHunt] Process 674 freed its stack at: 0x0a534000
+<4>[StackHunt] Process 676 freed its stack at: 0x0a538000
+<4>[StackHunt] Process 677 freed its stack at: 0x0a53a000
+<4>[StackHunt] Process 678 freed its stack at: 0x0a74c000
+<4>[StackHunt] Process 679 freed its stack at: 0x0a644000
+<4>[StackHunt] Process 680 freed its stack at: 0x0a642000
+<4>[StackHunt] Process 682 freed its stack at: 0x0a74e000
+<4>[StackHunt] Process 667 freed its stack at: 0x0a72c000
+<4>[StackHunt] Process 667 allocated stack at: 0x0a72c000
+<4>[StackHunt] Process 682 allocated stack at: 0x0a642000
+<4>[StackHunt] Process 680 allocated stack at: 0x0a644000
+<4>[StackHunt] Process 679 allocated stack at: 0x0a534000
+<4>[StackHunt] Process 678 allocated stack at: 0x0a532000
+<4>[StackHunt] Process 677 allocated stack at: 0x0a732000
+<4>[StackHunt] Process 676 allocated stack at: 0x0a52e000
+<4>[StackHunt] Process 674 allocated stack at: 0x0a760000
+<4>[StackHunt] Process 673 allocated stack at: 0x0a7cc000
+<4>[StackHunt] Process 672 allocated stack at: 0x0a538000
+<4>[StackHunt] Process 670 allocated stack at: 0x0a53a000
+<4>[StackHunt] Process 687 freed its stack at: 0x0a606000
+<4>[StackHunt] Process 689 freed its stack at: 0x0a60a000
+<4>[StackHunt] Process 693 freed its stack at: 0x0a622000
+<4>[StackHunt] Process 693 allocated stack at: 0x0a622000
+<4>[StackHunt] Process 689 allocated stack at: 0x0a60a000
+<4>[StackHunt] Process 687 allocated stack at: 0x0a606000
+<4>[StackHunt] Process 684 allocated stack at: 0x0a6e8000
+<4>[StackHunt] Process 713 freed its stack at: 0x0a606000
+<4>select 686 (ndroid.settings), adj 11, size 4430, to kill
+<4>send sigkill to 686 (ndroid.settings), adj 11, size 4430
+<4>[StackHunt] Process 699 freed its stack at: 0x0a7c2000
+<4>[StackHunt] Process 688 freed its stack at: 0x0a608000
+<4>[StackHunt] Process 690 freed its stack at: 0x0a60c000
+<4>[StackHunt] Process 691 freed its stack at: 0x0a61e000
+<4>[StackHunt] Process 692 freed its stack at: 0x0a620000
+<4>[StackHunt] Process 694 freed its stack at: 0x0a624000
+<4>[StackHunt] Process 695 freed its stack at: 0x0a626000
+<4>[StackHunt] Process 696 freed its stack at: 0x0a628000
+<4>[StackHunt] Process 697 freed its stack at: 0x0a750000
+<4>[StackHunt] Process 698 freed its stack at: 0x0a580000
+<4>[StackHunt] Process 686 freed its stack at: 0x0a762000
+<4>[StackHunt] Process 714 freed its stack at: 0x0a6e8000
+<4>[StackHunt] Process 603 freed its stack at: 0x058e0000
+<4>[StackHunt] Process 603 allocated stack at: 0x0a762000
+<4>[StackHunt] Process 714 allocated stack at: 0x0a750000
+<4>[StackHunt] Process 662 freed its stack at: 0x0a734000
+<4>[StackHunt] Process 662 allocated stack at: 0x0a734000
+<4>[StackHunt] Process 686 allocated stack at: 0x0a5c0000
+<4>[StackHunt] Process 633 freed its stack at: 0x0a650000
+<4>select 587 (viders.calendar), adj 9, size 4673, to kill
+<4>select 700 (droid.deskclock), adj 11, size 4130, to kill
+<4>send sigkill to 700 (droid.deskclock), adj 11, size 4130
+<4>[StackHunt] Process 632 freed its stack at: 0x0a706000
+<4>[StackHunt] Process 632 allocated stack at: 0x03096000
+<4>[StackHunt] Process 712 freed its stack at: 0x0a60a000
+<4>[StackHunt] Process 702 freed its stack at: 0x0a644000
+<4>[StackHunt] Process 704 freed its stack at: 0x0a532000
+<4>[StackHunt] Process 705 freed its stack at: 0x0a732000
+<4>[StackHunt] Process 706 freed its stack at: 0x0a52e000
+<4>[StackHunt] Process 708 freed its stack at: 0x0a7cc000
+<4>[StackHunt] Process 709 freed its stack at: 0x0a538000
+<4>[StackHunt] Process 710 freed its stack at: 0x0a53a000
+<4>[StackHunt] Process 710 allocated stack at: 0x0a7cc000
+<4>[StackHunt] Process 711 freed its stack at: 0x0a622000
+<4>[StackHunt] Process 700 freed its stack at: 0x0a72c000
+<4>[StackHunt] Process 700 allocated stack at: 0x0a6fc000
+<4>[StackHunt] Process 711 allocated stack at: 0x0a77c000
+<4>[StackHunt] Process 666 freed its stack at: 0x04298000
+<4>[StackHunt] Process 666 allocated stack at: 0x04298000
+<4>[StackHunt] Process 709 allocated stack at: 0x0a53c000
+<4>[StackHunt] Process 708 allocated stack at: 0x0a6ec000
+<4>[StackHunt] Process 706 allocated stack at: 0x0a74a000
+<4>[StackHunt] Process 669 freed its stack at: 0x0a52c000
+<4>[StackHunt] Process 723 freed its stack at: 0x04298000
+<4>[StackHunt] Process 724 freed its stack at: 0x0a53c000
+<4>[StackHunt] Process 725 freed its stack at: 0x0a6ec000
+<4>[StackHunt] Process 726 freed its stack at: 0x0a74a000
+<4>[StackHunt] Process 659 freed its stack at: 0x0a724000
+<4>[StackHunt] Process 659 allocated stack at: 0x0a724000
+<4>[StackHunt] Process 658 freed its stack at: 0x0a72e000
+<4>[StackHunt] Process 658 allocated stack at: 0x0a74a000
+<4>[StackHunt] Process 726 allocated stack at: 0x0a6ec000
+<4>[StackHunt] Process 444 freed its stack at: 0x0b798000
+<4>[StackHunt] Process 444 allocated stack at: 0x0b798000
+<4>[StackHunt] Process 730 freed its stack at: 0x0b798000
+<4>[StackHunt] Process 730 allocated stack at: 0x0b798000
+<4>[StackHunt] Process 715 freed its stack at: 0x0a762000
+<4>[StackHunt] Process 715 allocated stack at: 0x0a762000
+<4>[StackHunt] Process 732 freed its stack at: 0x0a762000
+<4>[StackHunt] Process 732 allocated stack at: 0x00e44000
+<4>[StackHunt] Process 725 allocated stack at: 0x00e34000

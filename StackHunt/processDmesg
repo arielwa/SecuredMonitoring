@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grep '\[StackHunt\]' dmesg.txt | grep -o '0x[0-9a-f]*' | sort > KernelStackLocations.txt
