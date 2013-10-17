@@ -21,11 +21,11 @@ Present Scripts
             
      *  Show the #define's declared using -D flags to the compiler:
             
-            ~/Git/SecuredMonitoring/printCompilerDefines buildOutput.txt
+            ~/Git/SecuredMonitoring/General/printCompilerDefines buildOutput.txt
             
         or:
             
-            cat buildOutput.txt | ~/Git/SecuredMonitoring/printCompilerDefines
+            cat buildOutput.txt | ~/Git/SecuredMonitoring/General/printCompilerDefines
             
     
  *  **generateDefinesFromConfig**:
@@ -35,9 +35,9 @@ Present Scripts
     
     *Example usage*:
             
-        ~/Git/SecuredMonitoring/generateDefinesFromConfig arch/arm/configs/goldfish_armv7_defconfig > ConfigDefines.h
+        ~/Git/SecuredMonitoring/General/generateDefinesFromConfig arch/arm/configs/goldfish_armv7_defconfig > ConfigDefines.h
             
     or:
             
-        cat arch/arm/configs/goldfish_armv7_defconfig | ~/Git/SecuredMonitoring/generateDefinesFromConfig > ConfigDefines.h
+        cat arch/arm/configs/goldfish_armv7_defconfig | ~/Git/SecuredMonitoring/General/generateDefinesFromConfig > ConfigDefines.h
             
